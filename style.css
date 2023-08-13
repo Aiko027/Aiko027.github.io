@@ -1,0 +1,173 @@
+.nav-div {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF1E8;
+}
+
+.caja-div{
+  float:left;
+  margin-left: 35px; 
+  font-size: 25px;
+  
+}
+a{
+  text-decoration: none!important;
+  color: #FFF1E8 ;
+}
+.caja-a
+{
+  color: #FF77A8;
+}
+
+.img-div-header {
+  background-color: black;
+  text-align: center;
+}
+
+.img-responsive
+{
+  max-width: 400px;
+  max-height:150px;
+  width: 100%;
+  height: auto;
+}
+
+.p-playing-info {
+  color: #FFA300;
+  margin-bottom: 0;
+}
+.p-playing-song
+{
+  color: #29ADFF;
+  margin-bottom: 0;
+}
+.player-style {
+  border: 1px solid #FFF1E8;
+  border-radius: 20px;
+}
+.player-div {
+  background-color: black;
+  display: flex;
+}
+.img-div-footer {
+  background-color: black;
+  text-align: left;
+}
+.img-footer{
+  max-width: 64px;
+  max-height: 64px;
+}
+.responsive{
+  width: 100%;
+  height: auto;
+
+}
+.footer-div {
+  background-color: black;
+  align-items: left;
+  justify-content: left;
+  color: #83769C;
+  align-content: start;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.boody-div {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.carousel-item {
+  position: relative;
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 550px;
+}
+
+.carousel-img {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.a-nav-div {
+  margin: 10px;
+}
+
+.texto-negro
+{
+  font-size: 28px;
+  color: black !important ;
+  border-color: #FFF1E8;
+  text-shadow: 1px  0px 0px #FFF1E8,
+               0px  1px 0px #FFF1E8,
+              -1px  0px 0px #FFF1E8,
+               0px -1px 0px #FFF1E8;
+}
+
+.link-texto
+{
+  text-decoration: underline;
+  color: black;
+}
+
+.hidden-text
+{
+  color: black;
+}
+
+.background-div{
+  background-color: rgb(27, 32, 32);
+}
+.divisor-div{
+  background-color: #FFF1E8;
+  color: black;
+}
+
+.div-rosaGuindo
+{
+  background-color: #7E2553;
+  color: #FFEC27;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.div-control-buttons
+{
+  background-color: black;
+}
+.button-song-controler{
+  margin-left: 20px;
+  margin-top: 5px;
+  height: 40px;
+  background-color: #FF004D;
+  border-color: #FFCCAA;
+  border-radius: 15px;
+  color: black;
+  font-weight: bold;
+  overflow: visible;
+}
+.card-description
+{
+  margin-bottom: 0px !important;
+  background-color: black;
+  border: 0;
+}
+.card-description-text
+{
+  background-color: #1D2B53;
+  color: #FFF1E8;
+  font-size: 20px;
+  
+}
+.centrar-div
+{
+  display: grid;
+  place-items: center;
+}

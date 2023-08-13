@@ -1,0 +1,3772 @@
+
+<!-- saved from url=(0043)https://www.lexaloffle.com/bbs/?cat=7#sub=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Lexaloffle BBS :: </title>
+<meta property="og:title" content="Lexaloffle BBS :: ">
+<meta name="viewport" content="width=device-width">
+
+<script type="text/javascript">
+function microAjax(B,A){this.bindFunction=function(E,D){return function(){return E.apply(D,[D])}};this.stateChange=function(D){if(this.request.readyState==4){this.callbackFunction(this.request.responseText)}};this.getRequest=function(){if(window.ActiveXObject){return new ActiveXObject("Microsoft.XMLHTTP")}else{if(window.XMLHttpRequest){return new XMLHttpRequest()}}return false};this.postBody=(arguments[2]||"");this.callbackFunction=A;this.url=B;this.request=this.getRequest();if(this.request){var C=this.request;C.onreadystatechange=this.bindFunction(this.stateChange,this);if(this.postBody!==""){C.open("POST",B,true);C.setRequestHeader("X-Requested-With","XMLHttpRequest");C.setRequestHeader("Content-type","application/x-www-form-urlencoded");C.setRequestHeader("Connection","close")}else{C.open("GET",B,true)}C.send(this.postBody)}};
+</script>
+
+
+<style type="text/css">
+<!--
+
+.banner_div{display:block}
+.topmenu_div{display:table}
+.lilmenu_div{display:none}
+.desktop_div{display:inline}
+.mobile_div{display:none}
+
+.avatar{
+	border-radius:10%;
+	box-shadow: 4px 4px 6px rgba(0.2, 0.0, 0.4, 0.1);
+}
+
+.scrollable_with_touch{
+	max-width:95vw; overflow-x:auto;overflow-y:hidden; -webkit-overflow-scrolling:touch;
+}
+.info_box {
+display:table; float:left; margin-left:8px; margin-right:16px;
+margin-top:0px; margin-bottom:16px; text-align:left;
+}
+
+.info_box_right_old {display:table; margin-left:16px; margin-right:8px;
+margin-top:-10px; margin-bottom:16px; float:right; text-align:left;
+}
+
+.info_box_right {
+	margin-top:-10px;
+}
+
+
+.info_box h2 {margin-top:-16px;}
+h2 {margin-top:0px;}
+
+.info_group {
+	display:table; max-width:800px;
+	margin-bottom:20px; text-align:left
+}
+
+.info_group h2{
+	text-decoration: none; 
+	color:#fab;
+	font-weight: normal;
+}
+
+.form_button{
+	padding:8px; display:table; margin-top:24px;
+	border:1px solid;
+	border-color:#999;
+	border-radius:6px;
+}
+
+.form_button:hover{
+	background-color:#fab;
+	color:#222;
+	cursor:pointer;
+}
+
+.form_button_span{
+	padding:2px; 
+	padding-left:4px; padding-right:4px;
+	display:inline;
+	border:1px solid;
+	border-color:#999;
+}
+
+.form_button_span:hover{
+	background-color:#fab;
+	color:#222;
+	cursor:pointer;
+}
+
+.edit_tool_button{
+	padding:4px; display:table;
+	padding-left:8px; padding-right:8px;
+	border-radius:1;
+	margin-right:4px;
+	margin-bottom:2px;
+	border:1px solid;
+	border-color:#999;
+	margin-bottom:8px;
+}
+
+.edit_tool_button:hover{
+	background-color:#fab;
+	color:#222;
+	cursor:pointer;
+}
+
+
+.form_tab{
+	padding:12px; padding-right:20px; padding-top:8px; padding-bottom:8px; display: table; float:left;
+	font-size:14pt; border-radius:0px;
+	margin-right:2px;
+	color:#ccc;
+	background-color:#444;
+}
+
+.form_tab:hover{
+	background-color:#f8a;
+	color:#fff;
+	cursor:pointer;
+}
+
+
+zzz_canvas{
+				image-rendering: optimizeSpeed;
+				image-rendering: -moz-crisp-edges;
+				image-rendering: -webkit-optimize-contrast;
+				image-rendering: optimize-contrast;
+				image-rendering: pixelated;
+				-ms-interpolation-mode: nearest-neighbor;
+				border: 0px;
+				width:512px;
+				height:512px;
+}
+
+.favlike{
+	min-width:160px;
+}
+
+.pixel_perfect{
+				image-rendering: optimizeSpeed;
+				image-rendering: -moz-crisp-edges;
+				image-rendering: -webkit-optimize-contrast;
+				image-rendering: optimize-contrast;
+				image-rendering: pixelated;
+				-ms-interpolation-mode: nearest-neighbor;
+				border: 0px;
+}
+
+.subnav{float:right; max-width:400px; margin-top:10px}					
+
+.snb{
+	padding:6px; margin:2px; 
+	display:flex;
+}
+
+@media screen and (max-width: 800px)
+{
+	.subnav{float:left; width:100%;}
+	.snb{padding:5px;}
+}
+
+@media screen and (max-width: 800px) {
+    .banner_div{display:none;}
+    .topmenu_div{display:none;}
+    .lilmenu_div{display:table;}
+	.desktop_div{display:none;}
+	.mobile_div{display:inline;}
+	.info_box{float:left;width:100%; margin:0px;  margin-bottom:10px}
+	.info_box_right{float:left; width:100%; margin:0px; margin-bottom:10px}
+	
+	.favlike{ min-width:10px; }
+}
+.block {
+  text-align: center;
+  margin: 20px;
+}
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  width: 300px;
+}
+
+
+body{
+	color:#e0e0e0;
+	background-color:#303030;
+	margin:0px;
+	padding:0px;
+}
+
+img{
+	max-width: 100%;
+	height:auto;
+}
+
+body{ 
+	font-size:10pt;
+	font-family : Verdana, Geneva, sans-serif;
+	line-height: 1.4;
+}
+
+code {
+	padding:2px;
+	margin:2px;
+	padding-left:4px;
+	padding-right:4px;
+	background-color:#ddd;
+	color: #222;
+}
+
+
+TD{font-size:10pt; font-family : Verdana, Geneva, sans-serif}
+p{
+	font-size: 10pt; font-family : Verdana, Geneva, sans-serif
+}
+
+a:hover {
+	cursor:pointer;
+}
+
+b{color: #ffffff}
+
+.tag {
+	float:left;
+	display:table;
+	text-align:left;
+	font-size:8pt;
+	margin-right:4px;
+	margin-bottom:4px;
+	padding:3px;
+	padding-left:6px;
+	padding-right:6px;
+	background-color:#aaa;
+	color:#444;
+	
+	border-radius:2px;
+}
+
+.tag:hover
+{
+	cursor:pointer;
+	color:#fff;
+	background-color:#f8a;
+}
+
+.bright_hover{
+	cursor:pointer;
+	opacity: 0.3;
+}
+.bright_hover:hover{
+	opacity: 1.0;
+}
+
+.menu_icon_lil {
+	display:inline-block;
+	padding-top:4px;
+	padding-left:2px;
+	padding-right:2px;
+}
+
+.menu_icon {
+	display:inline-block;
+	padding-top:4px;
+	padding-left:2px;
+	padding-right:2px;
+}
+
+.menu_icon a{
+	display:inline-block;
+	opacity:0.5;
+}
+
+.menu_icon a:hover{
+	opacity:1.0;
+	background: #ff80a0;
+}
+
+.menu_icon hover{
+	opacity:1.0;
+	background: #ff80a0;
+}
+
+.thread_preview{
+	width:100%; 
+	min-height:64px;
+	margin-top:2px;
+	background-color:#444;
+}
+
+.stitched {
+   padding: 10px;
+   padding-left: 20px;
+   padding-right: 20px;
+   margin: 10px;
+   margin-right: 50px;
+   background: #f8f8f8;
+   color: #404040;
+   font-size: 21px;
+   font-weight: bold;
+   line-height: 0.5em;
+   border: 2px dashed #d0e0ff;
+   border-radius: 5px;
+   box-shadow: 0 0 0 4px #f8f8f8, 2px 1px 6px 4px rgba(5, 5, 0, 0.2);
+   font-weight: normal;
+}
+
+.social_button{
+	opacity:0.5;
+}
+.social_button:hover{
+	opacity:1.0;
+}
+
+.support_button{
+	padding:8px; 
+	background-color:#fab; 
+	color:#333; 
+	font-size:10pt; 
+	display:table;
+	opacity:1.0;
+}
+.support_button:hover{
+	background-color:#fab; 
+	opacity:1.0;
+}
+
+
+
+
+.pinkhover{
+	cursor:pointer;
+}
+
+.pinkhover:hover{
+	background:#fab;
+	color:#222;	
+}
+
+.pink-hover_t a{
+		opacity: 0.5;
+}
+
+.pink-hover_t2 a{
+		
+}
+.pink-hover a:hover {
+		display: block;
+		background: #ff80a0;
+		opacity: 1.0;
+}
+.pink-hover_t a:hover {
+		display: block;
+		background: #ff80a0;
+		opacity: 1.0;
+}
+
+
+
+.post_title{
+	font-size: 9pt;
+	font-family : Verdana, Geneva, sans-serif;	
+}
+
+.post_title2{
+	font-size: 20pt;
+	font-family : Helvetica;
+	color : #ffffff;
+	margin: 0px;
+	margin-bottom: 8px;
+	margin-top:0px;
+}
+
+@media screen and (max-width: 800px) {
+	.post_title2{font-size:16pt};
+}
+
+.breadcrumbs{
+	margin-left:8px;
+	font-size:12px;
+	color:#888;
+	border-radius:0px;
+}
+
+.breadcrumbs a:link {
+	color: #ccc;
+	background-color: #666;
+	padding: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+
+	display:inline-block;	
+}
+
+.breadcrumbs a:visited {
+	color: #ccc;
+	background-color: #666;
+}
+
+.breadcrumbs a:hover {
+	color: #fff;
+	background-color: #888;
+}
+
+
+
+.breadcrumbs2{
+	margin-left:8px;
+	font-size:12px;
+	color:#888;
+	border-radius:0px;
+}
+.breadcrumbs2 a:link {
+	color: #999;
+	padding: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	display:inline-block;	
+}
+.breadcrumbs2 a:visited {
+	color: #999;
+}
+.breadcrumbs2 a:hover {
+	color: #fab;
+}
+
+
+
+.post_title3{
+	font-size: 10pt;
+	font-family : Verdana, Geneva, sans-serif;	
+	font-weight : bold;
+	color : #ff3070;
+}
+
+.blog_title2{
+	font-size: 20pt;
+	font-family : Verdana, Geneva, sans-serif;
+	color : #ff3070;
+}
+.blog_title{
+	font-size: 16pt;
+	font-family : Verdana, Geneva, sans-serif;
+	color : #202020;
+	
+}
+.blog_num_comments{
+	font-size: 14pt;
+	font-family : Helvetica;
+	color : #303030;
+	font-weight : bold;
+}
+.user_title{
+	font-size: 12pt;
+	font-family : Helvetica;
+	color : #ffe0d0;
+}
+
+h1{color:#ffffff;font-size:22pt;font-family : Verdana, Geneva, sans-serif; padding-top:8px}
+h2{color:#ffffff;font-size:16pt;font-family : Verdana, Geneva, sans-serif; padding-top:16px}
+h3{color:#f7a; font-size:12pt;font-family : Verdana, Geneva, sans-serif; padding-top:8px}
+
+zzzh3{color:#ff80a0;font-size:10pt;font-family : Verdana, Geneva, sans-serif}
+
+
+A:link { 
+	text-decoration: none;
+	color: #fff;
+}
+
+A:visited { 
+	text-decoration: none;
+	color: #fff;
+}
+
+p A:link { 
+	zzz_text-decoration: underline;
+	color:#fbc;
+}
+p A:hover{
+	color:#f0f;
+}
+p A:visited {
+	zzz_text-decoration: underline;
+	color:#fbc;
+}
+p A:visited:hover { 
+	color:#fff;
+}
+
+.link_with_image_unused{
+	background-image:url("/gfx/ext_link.png");
+	background-repeat: no-repeat;
+    background-position: right;
+    padding-right:20px;color:#fff;
+}
+
+
+
+A:hover {
+	text-decoration: none;
+	color: #fff;
+}
+A:active { 
+	text-decoration: none;
+	color: #ffffff
+}
+
+.navstring a {
+	color: #808080;
+	font-weight : bold;
+}
+.navstring a:hover {
+	color: #faa;
+	font-weight : bold;
+}
+.navstring{
+	color: #c0c0c0;
+	font-weight : bold;
+}
+
+
+
+.linkydiv{
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  font-family : sans-serif;
+  margin: 0px;
+   background-color : #ff80a0;
+}
+
+.linkydiv:hover {
+  background-color : #ff80a0;
+  color: #ffffff;
+}
+
+.cartfile{
+	float:left;
+	width:160px;
+	height:200px;
+	margin: 4px;
+	padding: 4px;
+	text-align: center;
+}
+
+.cartlabel{
+	background:#333;
+	width:124;
+	
+	padding:2px;
+	margin-top:8px;
+	padding-top:4px;
+	padding-bottom:4px;
+	font-size:10px;
+}
+
+.cartlabelbig{
+	background:#333;
+	width:252;
+
+	padding-top:14px;
+	padding-bottom:14px;
+	margin-top:16px;
+	font-size:16px;
+}
+
+
+
+.linkybutton {
+  float: left;
+  font-size: 12px;
+  color: #808080;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-family : sans-serif;
+  margin: 0px;
+  height: 16px;
+}
+
+
+@media screen and (max-width: 800px) {
+	.linkybutton{
+		float:none;
+		display:flex;
+		padding:12px;
+		
+		align-text: left;
+		margin-left:50px;
+		font-size:11pt;
+	}
+}
+
+.linkbutton.img img{
+	display:inline-block; 
+	vertical-align:middle;
+
+}
+
+.linkybutton:hover {
+  background-color : #ff80a0;
+  color: #ffffff;
+}
+
+.linkybutton_lil0 {
+  float:left;
+  background-color : #555;
+  padding: 6px;
+  color: #aaa;
+  font-size: 12px;
+  height:20px;
+  vertical-align:center;
+  display:inline-table;
+  margin:2px;
+}
+
+.linkybutton_lil {
+  float:left;
+  background-color : #555;
+  padding: 6px;
+  color: #aaa;
+  font-size: 16px;
+  height:20px;
+  vertical-align:center;
+  display:inline-table;
+  margin:2px;
+}
+
+.linkybutton_lil:hover {
+  background-color : #ff80a0;
+  color: #ffffff;
+}
+
+.pinkbutton{
+	background:#505050;
+	padding:6px;
+}
+
+.pinkbutton:hover {
+  background-color : #808080;
+}
+
+
+.pbutton{
+	padding: 0px;
+	margin: 0px;
+	font-family : Verdana, Geneva, sans-serif;	
+	background-color : #505050;
+	color : #a0a0a0;
+}
+
+.pbutton:hover{
+	background-color : #707070;
+}
+
+
+.logininput {
+  font-size: 12px;
+  color: #000000;
+  line-height: 14px;
+  border: 0;
+  margin: 2px;
+  padding: 2px;
+  background-color : #ccc;
+  height: 30px;
+  font-family : sans-serif;
+}
+.logininput:hover {
+  background-color : #ff80a0;
+}
+
+.logininput2 {
+  font-size: 12px;
+  color: #fff;
+	border-width: 1px;
+	border-style: solid;
+  border-color:#fff;
+	border-radius:3px;
+  margin: 4px;
+  padding: 8px;
+  padding-left:16px; padding-right:16px;
+  background-color : #333;
+  height: 32px;
+  font-family : sans-serif;
+  cursor:pointer;
+}
+.logininput2:hover {
+  background-color : #ff80a0;
+}
+
+input {
+	background-color:#ffffe0;
+	color:#202020;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #999999;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color: #404040;
+}
+
+
+.lexinput_search {
+background-color:#999;
+color:#202020;
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size: 10pt;
+color: #111;
+height:20px;
+margin-right: 8px;
+}
+
+.lexinput {
+background-color:#ffffe0;
+color:#202020;
+border-width: 1px;
+border-style: solid;
+border-color: #999999;
+font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size: 12pt;
+color: #404040;
+height:32px;
+margin-left:8px;
+}
+
+.result_msg {
+	color:#888;
+}
+
+
+#login_button {
+  width: 48px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent url(img/login_button.png) no-repeat center top;
+  text-indent: -1000em;
+}
+#signup_button {
+  width: 48px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent url(img/signup_button.png) no-repeat center top;
+  text-indent: -1000em;
+}
+-->
+</style>
+
+<script>
+		var current_time="2023-08-10 02:25:20";
+		var s_uid=0;	
+	
+function $(name)
+{
+	return document.getElementById(name);
+}
+
+// globals
+
+var p_page = 1;
+var p_sub = 0;
+var p_cat = 0;
+var p_pid = 0;
+var search_url_base = "";
+var tag_url_base = "";
+var pip_form_data = {};
+var touch_detected = false;
+var undefined = "undefined"; // :/
+var current_playing_cart_id = -1;
+
+
+function microAjax(B,A){this.bindFunction=function(E,D){return function(){return E.apply(D,[D])}};this.stateChange=function(D){if(this.request.readyState==4){this.callbackFunction(this.request.responseText)}};this.getRequest=function(){if(window.ActiveXObject){return new ActiveXObject("Microsoft.XMLHTTP")}else{if(window.XMLHttpRequest){return new XMLHttpRequest()}}return false};this.postBody=(arguments[2]||"");this.callbackFunction=A;this.url=B;this.request=this.getRequest();if(this.request){var C=this.request;C.onreadystatechange=this.bindFunction(this.stateChange,this);if(this.postBody!==""){C.open("POST",B,true);C.setRequestHeader("X-Requested-With","XMLHttpRequest");C.setRequestHeader("Content-type","application/x-www-form-urlencoded");C.setRequestHeader("Connection","close")}else{C.open("GET",B,true)}C.send(this.postBody)}};
+
+// from: https://plainjs.com/javascript/ajax/send-ajax-get-and-post-requests-47/
+function post_ajax(url, data, success) {
+    var params = typeof data == 'string' ? data : Object.keys(data).map(
+            function(k){ return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]) }
+        ).join('&');
+
+    var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+    xhr.open('POST', url);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState>3 && xhr.status==200) { success(xhr.responseText); }
+    };
+    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    //xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+ 	xhr.setRequestHeader('Content-Type', 'text/plain; charset=UTF-8');
+ 	
+    xhr.send(params);
+    return xhr;
+}
+
+// in ms.  1000, 20 means 50fps for 1 second. 
+function poll_function(duration, interval, func) {
+    var start_t = (new Date()).getTime();
+    (function p() {
+		tt = (new Date).getTime() - start_t;
+        if (tt <= duration)  {
+			func(tt/duration);
+            setTimeout(p, interval);
+        }
+    })();
+}
+
+
+function insertTextAtCursor(el, text, overwrite)
+{
+	if (typeof el == "string")
+	{
+		el_str = el;
+		el = document.getElementById(el);
+		if (!el){
+			console.log("@ could not find element to insert text: "+el_str);
+		}
+	}
+	
+	var val = el.value, endIndex, range, doc = el.ownerDocument;
+	
+	if (overwrite)
+	{
+		el.focus();
+		el.value = text;
+		return;
+	}
+    
+    if (typeof el.selectionStart == "number"
+		&& typeof el.selectionEnd == "number") 
+    {
+	  endIndex = el.selectionEnd;
+	  el.value = val.slice(0, endIndex) + text + val.slice(endIndex);
+	  el.selectionStart = el.selectionEnd = endIndex + text.length;
+    } 
+    else if (doc.selection != "undefined" && doc.selection.createRange) 
+    {
+	  el.focus();
+	  range = doc.selection.createRange();
+	  range.collapse(false);
+	  range.text = text;
+	  range.select();
+    }
+   
+     
+}
+
+
+
+function set_enter_to_save(el, save_el)
+{
+	if (!el) return;
+	
+	// experimental: only auto-save when value has changed (can tab through unchanged fields)
+	var start_val = el.value;
+	
+	if (!el.installed_enter_to_save) // only install once
+	{
+		console.log("@installing set_enter_to_save: "+el+", "+save_el);
+
+		el.installed_enter_to_save = true;
+		el.addEventListener("keyup",
+			function(event){
+				//console.log(event.keyCode);
+				
+				if (event.keyCode == 13)
+					 //if (el.value != start_val) // commented --  don't need / confusing.
+						save_el.click();
+				
+			
+				//if (event.keyCode == 9) // tab  // commented -- use blur if want to do this
+				//	save_el.click();
+			}
+		);
+	
+		// also auto-save on tab / click off
+	
+		// careful not to introduce double sends (hard to get right -- maybe not worth it)
+		el.addEventListener("blur",
+			function(event){
+				var x = event.clientX, y = event.clientY;
+				if (typeof x != 'number') return;
+				if (typeof y != 'number') return;
+				
+	  			var el0 = document.elementFromPoint(x, y);
+	  			if (!el0 || el0.name != "cancel_button")
+				
+				//if (el.value != start_val) save_el.click();
+				
+				save_el.click();
+			}
+		);
+	}
+	
+}
+
+
+function toggle_set_button(el_name, post_id, which, sid)
+{
+	var el = document.getElementsByClassName(el_name);
+	var eli = document.getElementsByClassName('i_'+el_name);
+	
+	if (s_uid == 0)
+	{
+		window.alert("Please log in first.");
+		return;
+	}
+
+	// window.alert(el_name);
+			
+	for(var i = 0; i < eli.length; i++) {
+		eli[i].innerHTML = '<center><img src=/gfx/load16.gif width=20 height=20></center>';
+	}
+	
+	microAjax("/bbs/set.php?pid="+post_id+"&sid="+sid+"&which="+which,
+	
+		function (retdata)
+		{
+			var el = document.getElementsByClassName(el_name);
+			for(var i = 0; i < el.length; i++) {
+				el[i].innerHTML = json_parse(retdata)['printable'];
+			}
+			
+			if (which == "tick")
+			{
+				// location.reload(true); // bleh
+			}
+		}
+	);
+}
+
+function hide_save_draft_button()
+{
+	var el = document.getElementById("save_draft_button");
+	if (el) el.style.display = "none";
+	var el = document.getElementById("preview_button");
+	if (el) el.style.display = "";
+	var el = document.getElementById("publish_post_button");
+	if (el) el.style.innerHTML = "Publish Changes";
+}
+
+function save_attr(val_id, div_id, url, post_save, extract_snippets)
+{
+	if (extract_snippets)
+		url = url+'&extract_snippets=1';
+	
+	//console.log("@ save_attr("+val_id+", "+div_id+", "+url+")");
+	//console.log("  @  extract_snippets: "+extract_snippets);
+	
+	var el1 = document.getElementById(div_id);
+	var el = document.getElementById(val_id);
+
+	if (el)
+	{
+		//console.log(" @ sending:" + el.value);
+		
+		value = el.value;
+		
+		post_ajax(url, el.value,
+			function (retdata)
+			{
+				dat = json_parse(retdata);
+				el1.innerHTML = dat['printable'];
+				
+				// set value field
+				if (dat['modified'] && dat['status'] == "ok")
+					el.value = dat['modified'];
+				//else
+				//	console.log("  @ no modified text");
+				
+				if (post_save)
+					post_save();
+			}
+		);
+	}
+	else
+	{
+		// grab value from url (val=) instead of body. e.g. catsub buttons
+		microAjax(url, 
+			function (retdata)
+			{
+				el1.innerHTML = json_parse(retdata)['printable'];
+			}
+		)
+	}
+	
+	//el1.innerHTML = '<img src=/gfx/load16.gif>';
+	el1.innerHTML = '<div style="padding:8px"><img src=/gfx/load16.gif></div>';
+	
+}
+
+
+function cancel_attr(val_id, div_id, url)
+{
+	console.log("@ cancel_attr("+val_id+", "+div_id+", "+url);
+	
+	var el = document.getElementById(val_id);
+	if (el)
+	{
+		var el1 = document.getElementById(div_id);
+		el1.innerHTML = '<div style="padding:8px"><img src=/gfx/load16.gif></div>';
+		
+		microAjax(url,
+			function (retdata)
+			{
+				el1.innerHTML = json_parse(retdata)['printable'];;
+			}
+		);	
+	}
+}
+
+
+function edit_attr(val_id, div_id, save_id, url, has_autosave)
+{
+	//console.log("@ edit_attr("+val_id+", "+div_id+", "+url+", "+has_autosave);
+
+	var el = document.getElementById(div_id);
+	
+	if (el)
+	{
+		//el.innerHTML='<img src=/gfx/load16.gif>';//+el.innerHTML;
+		el.innerHTML = '<div style="padding:8px"><img src=/gfx/load16.gif></div>';
+		
+		microAjax(url,
+			function (retdata)
+			{
+				el.innerHTML = json_parse(retdata)['printable'];
+				
+				var el2 = document.getElementById(val_id);
+				
+				if (el2)
+				if (has_autosave)
+				{
+					el2.focus();
+					//el2.select();
+					var el3 = document.getElementById(save_id);
+					set_enter_to_save(el2, el3);
+				}
+			}
+		);
+	}
+}
+
+
+
+// enter data 
+function submit_pip_form_data(form)
+{
+	// for each class=pip_form_input element, add to global pip_form_data
+
+	var els = document.getElementsByClassName('pip_form_input');
+	
+	console.log("@ submit form: adding "+els.length+" values");
+	
+	for(var i = 0; i < els.length; i++) {
+		el = els[i];
+		
+		if (el.checked)
+		{
+			pip_form_data[el.id] = "checked";
+		}
+		else if (el.value)
+		{
+			pip_form_data[el.id] = el.value;
+		}
+		
+		console.log("@ set "+el.id+" to "+pip_form_data[el.id]); 
+		
+		if (el.files && el.files[0])
+		{
+			console.log("@ file: "+el.files[0].name);
+
+			pip_form_data["uploaded_file"] = JSON.stringify(el.files[0]);
+			pip_form_data["uploaded_file_size"] = el.files[0].size;
+			pip_form_data["uploaded_name"] = el.files[0].name;
+			pip_form_data["uploaded_type"] = el.files[0].type;
+		}
+	}
+}
+
+function reload_pip_form(form, step)
+{
+	var el = document.getElementById(form);
+
+	console.log("reloading form: "+form+" // step "+step);	
+	
+	if (el)
+	{
+		
+		var file_size = 0;
+		if (pip_form_data.file_contents)
+			file_size = pip_form_data.file_contents.length * 6 / 8;
+
+		if (form == "cart_submit" && file_size > 1024*512) // 512k for pico-8 / voxatron carts
+		{
+			window.alert('Sorry, that file is too large. ('+Math.floor(file_size/1024)+'k / 512k)');
+			return;
+		}
+
+		if (file_size > 1024*1024*8)
+		{
+			window.alert('Sorry, that file is too large. ('+Math.floor(file_size/(1024*1024))+'MB / 8MB)');
+			return;
+		}
+
+		// upload
+
+		stringified_data = JSON.stringify(pip_form_data);
+
+		var el1 = document.getElementById("form_loading_icon");
+		if (el1)
+			el1.innerHTML='<img src=/gfx/load16.gif>';
+
+		//window.alert('pip_form_data.target_field:'+pip_form_data["target_field"]);
+		
+		// pass along some context
+		post_ajax("/form.php?form="+form+"&step="+step+"&cat="+p_cat+"&sub="+p_sub+"&pid="+
+				p_pid+"&page="+p_page,
+			stringified_data,
+			function (retdata)
+			{
+				el.innerHTML = retdata; // not JSON!
+			}
+		);
+	}
+	else
+	{
+		console.log("@@ could not find form element");
+	}
+}
+
+function save_open_pip_form_fields()
+{
+	// click all the save buttons
+	var els = document.getElementsByClassName('form_button');
+	//for(var i = 0; i < els.length; i++) // invalidates iterator on first save! ha!
+	for(var i = els.length-1; i >= 0; i--) 
+	{
+		var el = els[i];
+		suffix = el.id.substr(el.id.length-5);
+		if (suffix == "_save")
+			el.click();
+	}
+}
+
+function submit_pip_form(form, step)
+{
+	// save any open fields
+	
+	submit_pip_form_data(form);
+	reload_pip_form(form, step);
+}
+
+function clear_pip_form()
+{
+	pip_form_data = {};
+}
+
+
+function randomize_cart_id_field()
+{
+	el = document.getElementById("cart_lid");
+	
+	c = "bdfghjkmnprstwyz";
+	v = "aiueo";
+
+	val = "";
+	for (i = 0; i < 5; i++)
+	{
+		val = val + c.substr(Math.floor(Math.random()*16), 1);
+		val = val + v.substr(Math.floor(Math.random()*6), 1);
+	}
+	
+	el.value = val;
+}
+
+// https://stackoverflow.com/questions/12710001/how-to-convert-uint8-array-to-base64-encoded-string
+function Uint8ToBase64(u8Arr){
+  var CHUNK_SIZE = 0x8000; //arbitrary number
+  var index = 0;
+  var length = u8Arr.length;
+  var result = '';
+  var slice;
+  while (index < length) {
+    slice = u8Arr.subarray(index, Math.min(index + CHUNK_SIZE, length)); 
+    result += String.fromCharCode.apply(null, slice);
+    index += CHUNK_SIZE;
+  }
+  return btoa(result);
+}
+
+
+function reader_onload(evt)
+{
+	// evt.target.result is a ArrayBuffer
+	
+	var bytes = new Uint8Array( evt.target.result );
+	pip_form_data["file_contents"] = Uint8ToBase64(bytes);
+	
+	// show submit button
+	var el = document.getElementById("uploaded_button");
+	el.style.display = "table";
+}
+
+function filechooser_onchange(files)
+{
+	var file = files[0];
+	var reader = new FileReader();
+	reader.onload = function(evt) { reader_onload(evt); };
+	reader.readAsArrayBuffer(file);
+}
+
+
+
+function toggle_visible(el)
+{
+	//console.log("@toggle_visible: "+el);
+	
+	if (typeof el == 'string')
+	{
+		el = document.getElementById(el);
+	}
+	
+	if (!el){
+		return;
+	}
+	
+	if (el.style.display == "")
+	{
+		el.style.display="none";
+		return false;
+		
+	}
+	else
+	{
+		
+		el.style.display="";
+		return true;
+	}
+}
+
+/*
+	show active tab under tab_name, hide others
+	assume only one set of tabs on page
+*/
+function show_tab(tab_name, which, tab_group)
+{
+	var el;
+	
+	console.log("toggle tab "+tab_name+"_"+which);
+	
+	if (!tab_group) tab_group = "form_tab";
+	
+	var els = document.getElementsByClassName(tab_group);
+	
+	//console.log("found "+els.length);
+	
+	for(var i = 0; i < els.length; i++) {
+		el = els[i];
+		el2 = document.getElementById(el.id+"_content");
+		
+		if (el.id == tab_name+"_"+which)
+		{
+			// open tab
+			el.style["background-color"] = "#f8a";
+			el.style.color="#222";
+			if (el2) console.log(" opening "+el2.id);
+			if (el2) el2.style.display="block";
+		}
+		else
+		{
+			// hide tab
+			el.style["background-color"] = "";
+			el.style.color="#fff";
+			if (el2) console.log(" hiding "+el2.id);
+			if (el2) el2.style.display="none";
+		}
+		
+	}
+	
+	
+}
+
+
+function get_cart_url(lid, cat)
+{
+	//console.log("@get_cart_url lid:"+lid+" cat:"+cat);
+	
+	/*
+	console.log("@number:  "+Number(lid));
+	console.log("@string:  "+String(lid));
+	console.log("@equality:"+((Number(lid) == String(lid)) ? "true" : "false"));
+	*/
+	
+	if (Number(lid) == String(lid) && Number(lid) > 0)
+	{
+		num = Math.floor(lid / 10000);
+		url = `/bbs/cposts/`+num+`/`;
+		if (cat == 6) return url + `cpost` + lid + `.png`;
+		if (cat == 7) return url + lid + `.p8.png`;
+	}
+	else
+	{
+		lid = String(lid);
+		if (cat == 6) return `/bbs/cposts/`+lid.substr(0,2)+`/`+lid+`.vx.png`;
+		if (cat == 7) return `/bbs/cposts/`+lid.substr(0,2)+`/`+lid+`.p8.png`;
+	}
+	return '';
+}
+
+function element_dismisser(el, event)
+{
+	var inner = el.childNodes[1];
+	if (!inner) return;
+	var rect = inner.getBoundingClientRect();
+	
+	
+	if (!el.real_dismiss) 
+	{
+		//console.log(' @@ element_dismisser: not real click -- return early');
+		el.real_dismiss = true; // next time!
+		return;
+	}
+	
+	if (rect && rect.bottom > 0)
+	if (event.clientX < rect.left || event.clientX > rect.right || 
+		event.clientY > rect.bottom || event.clientY < rect.top)
+	{
+		//console.log(' @@ element_dismisser: dismissing');
+		console.log(rect);
+		el.style.display="none";
+		document.removeEventListener('click', dismisser_func);		
+	}
+
+}
+var dismisser_func = null;
+
+function install_dismisser(el1)
+{ 
+	//console.log('@@ installing dismisser');	
+	
+	// just in case
+	document.removeEventListener('click', dismisser_func);
+	dismisser_func = 
+	function(event){
+		element_dismisser(el1, event);
+	}
+	document.addEventListener('click', dismisser_func);
+	el1.real_dismiss = false; // hack -- first click is to open pulldown
+}
+
+
+function install_search_listener(el)
+{
+	el.addEventListener("keyup",
+		function(event){
+			if (event.keyCode == 13)
+				window.location.hash = "" + search_url_base + el.value;
+		}
+	);
+}
+
+
+		function json_parse(data){
+			if (data[0] != '{'){ window.alert('Error // Bad Data Format: ' + data);
+			  return {"printable" : "[error]", "status" : "bad_data"};
+			} return JSON.parse(data);
+		}</script>
+
+	<script>
+	
+	var cart_info = {};
+	
+	// from https://github.com/kripken/emscripten/issues/2053
+	
+	function fullscreenable_canvas(canEl)
+	{
+		// var canEl = document.getElementById("canvas");
+
+		var reqFuncName = (canEl.mozRequestFullScreen || canEl.webkitRequestFullScreen || {"name": "requestFullScreen"}).name;
+		document.addEventListener(reqFuncName.slice(0, -"requestFullScreen".length) + "fullscreenchange", function (evt) {
+		if(document.mozFullScreen || document.webkitIsFullScreen || document.fullScreen || document.isFullScreen) {
+
+			var w = canEl.clientWidth;
+			var h = canEl.clientHeight;
+			var factor = Math.min(screen.width / w, screen.height / h);
+
+			canEl.setAttribute("style", "width: " + Math.round(w * factor) + 
+				"px !important; height: " + Math.round(h * factor) + "px !important;");
+
+			}
+			else {
+				canEl.removeAttribute("style");
+			}
+		}, false);
+		
+		// in Firefox full screen must be set to the parent of the canvas to allow resizing the canvas for correct aspect ratio
+		if(reqFuncName == "mozRequestFullScreen") {
+			canEl[reqFuncName] = function() { 
+				this.parentNode[reqFuncName].apply(this.parentNode, arguments);
+			};
+		}
+	}
+	
+	
+	function pip_requestFullscreen( element ) {
+	  if ( element.requestFullscreen ) {
+		element.requestFullscreen();
+	  } else if ( element.mozRequestFullScreen ) {
+		element.mozRequestFullScreen();
+	  } else if ( element.webkitRequestFullScreen ) {
+		element.webkitRequestFullScreen( Element.ALLOW_KEYBOARD_INPUT );
+	  }
+	}
+
+
+	window.onload = function() {
+		//fullscreenable_canvas();
+	}
+	
+	
+	
+	</script>
+
+<script>
+function validate_signup (form)
+{
+	if (form.su_agree.checked)
+	{
+		return true;
+	}
+	else
+	{
+		alert ("If you wish to sign up, you need to agree to the Terms of Use")
+		return false;
+	}
+}
+</script>
+<style type="text/css" id="operaUserStyle">
+    video {
+      filter: -opera-shader(url(data:text/plain;base64,dW5pZm9ybSBzaGFkZXIgaUNodW5rOwp1bmlmb3JtIGZsb2F0MiBpQ2h1bmtTaXplOwoKY29uc3QgZmxvYXQgVEhSRVNIT0xEX0FSRUEgPSA4MDAgKiA2MDA7CmNvbnN0IGZsb2F0IE1JTl9BUkVBID0gNDAwICogMTAwOwpjb25zdCBmbG9hdCBNSU5fU1RSSVAgPSAyMDsKY29uc3QgZmxvYXQgTUFSR0lOID0gMTsKCmhhbGYzIHBpeGVsKGNvbnN0IGludCB4LCBjb25zdCBpbnQgeSwgaW4gaGFsZjIgeHkpCnsKCXJldHVybiBpQ2h1bmsuZXZhbCh4eSArIGhhbGYyKHgsIHkpKS5yZ2I7Cn0gIAoKaGFsZjMgUkdYKGhhbGYyIHh5KXsKCWhhbGYzIGYgPQoJcGl4ZWwoLTEsLTEsIHh5KSAqICAxLiArICAgICAgICAgICAgICAgICAgICAgCglwaXhlbCggMCwtMSwgeHkpICogLTEuICsgICAgICAgICAgICAgICAgICAgIAoJcGl4ZWwoIDEsLTEsIHh5KSAqICAxLiArCgkKCXBpeGVsKC0xLCAwLCB4eSkgKiAtMS4gKyAgICAgICAgICAgICAgICAgICAgCglwaXhlbCggMCwgMCwgeHkpICogLTIuICsgICAgICAgICAgICAgICAgICAgICAKCXBpeGVsKCAxLCAwLCB4eSkgKiAtMS4gKyAgICAgICAgICAgICAgICAgICAgIAoJCglwaXhlbCgtMSwgMSwgeHkpICogIDEuICsgICAgICAgICAgICAgICAgICAgICAKCXBpeGVsKCAwLCAxLCB4eSkgKiAtMS4gKyAgICAgICAgICAgICAgICAgICAgIAoJcGl4ZWwoIDEsIDEsIHh5KSAqICAxLgoJOwoJcmV0dXJuIGYgLyAtMjsKfQoKaGFsZjMgUkdYTW9yZShoYWxmMiB4eSl7CgloYWxmMyBmID0KCXBpeGVsKC0xLC0xLCB4eSkgKiAgMS4gKyAgICAgICAgICAgICAgICAgICAgIAoJcGl4ZWwoIDAsLTEsIHh5KSAqIC0xLiArICAgICAgICAgICAgICAgICAgICAKCXBpeGVsKCAxLC0xLCB4eSkgKiAgMS4gKwoJCglwaXhlbCgtMSwgMCwgeHkpICogLTEuICsgICAgICAgICAgICAgICAgICAgIAoJcGl4ZWwoIDAsIDAsIHh5KSAqIC0xLiArICAgICAgICAgICAgICAgICAgICAgCglwaXhlbCggMSwgMCwgeHkpICogLTEuICsgICAgICAgICAgICAgICAgICAgICAKCQoJcGl4ZWwoLTEsIDEsIHh5KSAqICAxLiArICAgICAgICAgICAgICAgICAgICAgCglwaXhlbCggMCwgMSwgeHkpICogLTEuICsgICAgICAgICAgICAgICAgICAgICAKCXBpeGVsKCAxLCAxLCB4eSkgKiAgMS4gCgk7CglyZXR1cm4gZiAvIC0xOwp9CgoKaGFsZjQgbWFpbihmbG9hdDIgeHkpCnsKCWhhbGY0IGNvbG9yID0gaUNodW5rLmV2YWwoeHkpOwoJCglpZiAoY29sb3IuYSA8IDEpIHsKCQlyZXR1cm4gY29sb3I7Cgl9CgkKCWlmIChpQ2h1bmtTaXplLnggKiBpQ2h1bmtTaXplLnkgPCBNSU5fQVJFQSkgewoJCXJldHVybiBjb2xvcjsKCX0KCglpZiAoaUNodW5rU2l6ZS55IDwgTUlOX1NUUklQIHx8IGlDaHVua1NpemUueCA8IE1JTl9TVFJJUCkgewoJCXJldHVybiBjb2xvcjsKCX0KCglpZiAoeHkueCA8IE1BUkdJTiB8fCB4eS54ID4gKGlDaHVua1NpemUueCAtIE1BUkdJTikgfHwKCSAgICB4eS55IDwgTUFSR0lOIHx8IHh5LnkgPiAoaUNodW5rU2l6ZS55IC0gTUFSR0lOKSkgewogICAgCXJldHVybiBjb2xvcjsgICAgCiAgICB9CgkKCWlmIChpQ2h1bmtTaXplLnggKiBpQ2h1bmtTaXplLnkgPiBUSFJFU0hPTERfQVJFQSkgewoJCWNvbG9yID0gaGFsZjQoUkdYTW9yZSh4eSksIDEpOwoJfSBlbHNlIHsKCQljb2xvciA9IGhhbGY0KFJHWCh4eSksIDEpOwoJfQoKCXJldHVybiBjb2xvcjsKfQo=));
+    }
+  </style></head><body><div id="body_0">
+		<div class="mobile_div">
+		<div class="lilmenu_div" style="
+		padding:0px;
+		margin:0px;
+		top:0px;
+		
+		width:100%;
+		height:128px;
+		
+		background:url(&#39;/gfx/h800_pico8.png&#39;) no-repeat center;
+		
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		-o-background-size:cover;
+		background-size:cover;
+	">
+	
+			<a href="https://www.lexaloffle.com/pico-8.php">
+			<div style="
+				position:absolute;
+				top: 0px;
+				height:128;
+				width:100%;
+			">
+			</div></a>
+			<div style="
+			position:relative;
+			height:48px;
+			top: 76px;
+			margin:0px;
+		"><div style="float:left; height:48px; display:flex; align-items:center; ">
+				
+				<a onclick="
+					var el = document.getElementById(&#39;lil_menu_pulldown&#39;);
+					toggle_visible(el);
+					var el = document.getElementById(&#39;account_pulldown&#39;);
+					el.style.display=&#39;none&#39;;
+			
+				">
+					<div style="background-color:rgba(0,0,0,0.5); 
+					margin-left:8px; padding:12px">
+					<img src="./Lexaloffle BBS ___files/top_pulldown.png" width="20" height="20">
+					
+					</div>
+				</a>
+				
+			</div>
+		<div style="float:right; margin-right:12px; height:48px; 
+			display:flex; align-items:center; 
+			background-color:rgba(0,0,0,0.5);
+		">
+		<script>
+			function click_account_pulldown()
+			{
+				el1 = document.getElementById('account_pulldown');
+				if (toggle_visible(el1))
+				{
+					install_dismisser(el1);
+					el2 = document.getElementById('lil_menu_pulldown');
+					el2.style.display='none';	
+				}
+			}
+		</script>
+		<a onclick="click_account_pulldown();">
+		
+		<div style="display:flex; align-items:center; 
+		height:100%; float:right; 
+		">
+		
+		<div style="
+			padding:8px;
+			display:flex; align-items:center; 
+		">
+	Log In &nbsp;<img style="margin-left:8px;" src="./Lexaloffle BBS ___files/top_drop.png">
+		</div>
+		</div>
+		</a></div></div></div>
+	
+		<style>
+	
+			.pdmi{
+				display:flex;
+				align-items:center;
+				padding:4px;
+				font-size:12pt;
+			};
+		</style>
+	
+	
+		<div id="lil_menu_pulldown" style="
+			   		z-index: 400;
+			   	   position:absolute;
+			   	   
+				   display:table;
+				   padding-top:20px;
+				   padding-bottom:20px;
+				   background-color:rgba(0,0,0,0.8);
+				   width:100%; display:none"><div style="width:auto;padding:16px"><div class="menu_icon" title="Lexaloffle Games"><a href="https://www.lexaloffle.com/"><img src="./Lexaloffle BBS ___files/top_info.png"></a></div><div class="menu_icon" title="PICO-8"><a href="https://www.lexaloffle.com/pico-8.php"><img src="./Lexaloffle BBS ___files/p8b_pico8.png"></a></div><div class="menu_icon" title="Voxatron"><a href="https://www.lexaloffle.com/voxatron.php" style="padding-right:4px;padding-left:4px;"><img src="./Lexaloffle BBS ___files/p8b_vox.png"></a></div><div class="menu_icon" title="BBS"><a href="https://www.lexaloffle.com/bbs"><img src="./Lexaloffle BBS ___files/bbs_cube.gif" width="40"></a></div><div class="menu_icon" title="Superblog"><a href="https://www.lexaloffle.com/bbs/superblog.php"><img src="./Lexaloffle BBS ___files/top_blog.png"></a></div></div><a href="https://www.lexaloffle.com/pico-8.php"><div class="linkybutton">PICO-8</div></a><a href="https://www.lexaloffle.com/pico-8.php?page=faq"><div class="linkybutton">FAQ</div></a><a href="https://www.lexaloffle.com/pico-8.php?page=resources"><div class="linkybutton">Resources</div></a><a href="https://www.lexaloffle.com/pico-8.php?page=schools"><div class="linkybutton">Schools</div></a><a href="https://www.lexaloffle.com/pico-8.php?page=submit"><div class="linkybutton">Submit</div></a><a href="https://www.lexaloffle.com/bbs/?cat=7#sub=2"><div class="linkybutton" style="background-color : #a0a0a0; color:#fff">Forum</div></a><a href="https://www.lexaloffle.com/bbs/?cat=7&amp;carts_tab=1&amp;#sub=2&amp;mode=carts"><div class="linkybutton">Carts</div></a></div></div>
+			<div class="topmenu_div" id="banner" style="
+				margin:0px;
+				top:0px;
+				background-color:#111;
+				width:100%;
+				height:25vh;
+			
+				background:url(&#39;/gfx/h800_pico8.png&#39;) no-repeat center;
+				
+				-webkit-background-size:cover;
+				-moz-background-size:cover;
+				-o-background-size:cover;
+				background-size:cover;
+		">
+	<a href="https://www.lexaloffle.com/pico-8.php">
+	<div style="
+		position:absolute;
+		top: 0px;
+		height:25vh;
+		width:100%;
+	">
+	</div></a>
+	<div class="topmenu_div" id="m" style="
+		position:relative;
+		top: -47.9px; transform: translate(0, 25vh);
+		margin:0px;
+		background-color:rgba(10,0,20,0.8);
+		width:100%;
+		height:48px;
+
+	"><div style="float:left; margin-left:0px;"><div class="menu_icon" title="Lexaloffle Games"><a href="https://www.lexaloffle.com/"><img src="./Lexaloffle BBS ___files/top_info.png"></a></div><div class="menu_icon" title="PICO-8"><a href="https://www.lexaloffle.com/pico-8.php"><img src="./Lexaloffle BBS ___files/p8b_pico8.png"></a></div><div class="menu_icon" title="Voxatron"><a href="https://www.lexaloffle.com/voxatron.php" style="padding-right:4px;padding-left:4px;"><img src="./Lexaloffle BBS ___files/p8b_vox.png"></a></div><div class="menu_icon" title="BBS"><a href="https://www.lexaloffle.com/bbs"><img src="./Lexaloffle BBS ___files/bbs_cube.gif" width="40"></a></div><div class="menu_icon" title="Superblog"><a href="https://www.lexaloffle.com/bbs/superblog.php"><img src="./Lexaloffle BBS ___files/top_blog.png"></a></div><div style="display:inline-block;background-color:#555;width:1px;height:40px;
+			margin-left:10px;margin-right:10px"></div><div style="display:inline-block;margin:4px" class="navstring"><a href="https://www.lexaloffle.com/pico-8.php"><div class="linkybutton">PICO-8</div></a><a href="https://www.lexaloffle.com/pico-8.php?page=faq"><div class="linkybutton">FAQ</div></a><a href="https://www.lexaloffle.com/pico-8.php?page=resources"><div class="linkybutton">Resources</div></a><a href="https://www.lexaloffle.com/pico-8.php?page=schools"><div class="linkybutton">Schools</div></a><a href="https://www.lexaloffle.com/pico-8.php?page=submit"><div class="linkybutton">Submit</div></a><a href="https://www.lexaloffle.com/bbs/?cat=7#sub=2"><div class="linkybutton" style="background-color : #a0a0a0; color:#fff">Forum</div></a><a href="https://www.lexaloffle.com/bbs/?cat=7&amp;carts_tab=1&amp;#sub=2&amp;mode=carts"><div class="linkybutton">Carts</div></a></div></div>
+		<script>
+			function click_account_pulldown()
+			{
+				el1 = document.getElementById('account_pulldown');
+				if (toggle_visible(el1))
+				{
+					install_dismisser(el1);
+					el2 = document.getElementById('lil_menu_pulldown');
+					el2.style.display='none';	
+				}
+			}
+		</script>
+		<a onclick="click_account_pulldown();">
+		
+		<div style="display:flex; align-items:center; 
+		height:100%; float:right; 
+		">
+		
+		<div style="
+			padding:8px;
+			display:flex; align-items:center; 
+		">
+	Log In &nbsp;<img style="margin-left:8px;" src="./Lexaloffle BBS ___files/top_drop.png">
+		</div>
+		</div>
+		</a></div></div><div id="account_pulldown" style="position:relative; left: -28px; float:right;
+			width: 240px; height:0px;
+			z-index: 400;
+			display:none;">
+	
+	<div id="account_pulldown_inner" style="
+		padding:12px; 
+		background-color:rgba(0,0,0,0.8);
+		width:100%;
+		border-width: 1px;
+		border-style: solid;
+		border-color: #000;
+
+		">
+	
+		<div style="margin-right:20px">
+		
+	<form style="margin:8px;" name="loginsubmit" method="post" action="https://www.lexaloffle.com/account.php?page=login">
+		<table><tbody><tr>
+		<td>User:</td><td>
+		<input name="user" class="logininput" size="16"><br>
+		</td></tr><tr><td>
+		Password:</td><td>
+		<input name="pass" type="password" class="logininput" size="16"><br>
+		<input type="hidden" name="go" value="/bbs/?cat=7">
+		</td></tr><tr><td></td><td>
+		<input type="submit" class="logininput2" style="margin-top:8px" value="LOG IN">
+		</td></tr></tbody></table>
+		
+		<br>
+		<a href="https://www.lexaloffle.com/account.php?page=new_user" style="color:#fab">New User</a>
+		|
+		<a href="https://www.lexaloffle.com/account.php" style="color:#fab">Account Help</a>
+		
+		
+		</form></div></div></div>
+		<div style="max-width:100vw; padding:0vw">
+
+	    <div id="main_div" style="
+	    	max-width:920px;
+			min-height:50vh;
+			margin:auto;
+			display:block;
+			padding-top:16px; 
+			padding-bottom:16px;
+			overflow:hidden;
+			"><script language="javascript" type="text/javascript">
+		var p_sub = 0;
+		var p_cat = 7;
+		var s_uid = 0;
+		var p_page = "1";
+		var p_mode = "";
+	
+var imageChooserWindow;
+function popup(which) {
+	if (imageChooserWindow)
+	imageChooserWindow.close();
+   imageChooserWindow=window.open('popup.php?page='+which,'windowname','height=600,width=600,scrollbars=yes');
+}
+
+
+
+function load_hash_location()
+{
+	var h = window.location.hash.substr(1);
+
+	var params = 'use_hurl=1'; // use "#url" format for single page location changes
+	
+	
+	if (typeof p_cat !== 'undefined') params = params+'&cat=' + p_cat;
+	
+	// pass along params specified in ? part
+	// (when clicked, effectively moves from ? part to # part
+	if (typeof p_sub !== 'undefined') params = params+'&sub='+p_sub;
+	
+	if (typeof p_page !== 'undefined') params = params+'&page='+p_page;
+	if (typeof p_mode !== 'undefined') params = params+'&mode='+p_mode;
+	if (typeof p_orderby !== 'undefined') params = params+'&orderby='+p_orderby;
+	
+	
+	params = params+'&'+h;
+	
+	console.log("@ load_hash_location "+params);
+	
+	// set main_list to loading
+	show_loading_spinner();
+	
+	// /bbs/lister.php
+	microAjax('lister.php?'+params,
+	
+		function (retdata)
+		{
+			var el = document.getElementById('main_list');
+			if (el)
+			{
+				el.innerHTML = retdata;
+				hide_loading_spinner();
+				// re-run self (including this)
+				var el2 = document.getElementById('cart_data_script');
+				if (el2)
+				{
+					console.log("@ running cart_data_script\n");
+					eval(el2.innerHTML);
+				}
+				update_stick_scrolling();
+				
+			}
+		}
+	);
+}
+
+function show_loading_spinner()
+{
+	var el = document.getElementById('loading_spinner');
+	//if (el) el.style.display = 'block';
+	
+	if (el) el.innerHTML='<img src="/gfx/load16.gif">';
+}
+
+function hide_loading_spinner()
+{
+//	var el = document.getElementById('loading_spinner');
+//	if (el) el.style.display = 'none';
+}
+
+
+function get_relative_time(s)
+{
+	//return '['+current_time+' , '+s+']';
+		
+	var d0 = Math.round(new Date(s.replace(" ","T")).getTime() / 1000);
+	//var d1 = Math.round(new Date().getTime() / 1000);
+	var d1 = Math.round(new Date(current_time.replace(" ","T")).getTime() / 1000);
+	
+	
+	var t = d1-d0; // seconds
+	
+	if (t < 60)
+		return "just now";
+		//return Math.round(t)+" seconds ago";
+	
+	if (t < 3600)
+		return Math.round(t / 60)+" minutes ago";
+	
+	if (t < 3600*24)
+		return Math.round(t / 3600)+" hours ago";
+	
+	// convert to days
+	t = Math.round(t / (3600*24));
+	
+	if (t < 30)
+		return Math.round(t)+" days ago";
+	
+	if (t < 365)
+		return Math.round(t/30.43)+" months ago";
+	
+	return Math.round(t/365.25)+" years ago";
+}
+
+
+function update_stick_scrolling()
+{
+	var el = document.getElementById('sticky');
+	if (el)
+	{
+		// when placeholder parent is above top of screen, make fixed
+		var screen_y  = el.parentNode.getBoundingClientRect().top;
+		if (screen_y < 0)
+			el.style.position = 'fixed';
+		else
+			el.style.position = 'relative';
+	}
+}
+
+document.addEventListener("scroll", update_stick_scrolling);
+
+
+function print_cart_code(url, div_id)
+{
+/*
+	if (print_pico8_code){
+		print_pico8_code(url, div_id);
+		return;		
+	}
+*/
+
+	window.alert("printing code 1! "+url+" "+div_id);
+
+	e = document.createElement("script");
+	e.type = "application/javascript";
+	e.src = "/bbs/cart_tools.js";
+	e.id = "e_script";
+
+	document.body.appendChild(e); // load and run
+
+	Module.onRuntimeInitialized = _ => {
+		
+   		const print_pico8_code = Module.cwrap('print_pico8_code', 'number', ['string','string']);
+
+		print_pico8_code(url, div_id);
+	};
+
+	
+}
+
+
+
+</script><div id="main_list" style="display:block; min-height:100vh;"><div style="background-color:#222; display:block"><div style="height:56px; display:table;">
+		<div id="sticky" style="
+			width:100%; height:30px;
+			max-width:904px;
+			font-size:16pt;font-weight:heavy;
+			display:table;
+			color:#fff;
+			padding:8px;
+			top: 0px;
+			background-color:#222;
+			position:relative;
+		">
+		
+		
+				<div class="desktop_div">
+					<a href="https://www.lexaloffle.com/bbs/?">
+					<div style="color:#888; float:left; display:table; background-color:#333;padding:6px">BBS</div>
+					</a>
+					<div style="color:#666; float:left; display:table; padding:6px"> &gt; </div>
+				</div>
+				<a href="https://www.lexaloffle.com/bbs/?cat=7">
+					<div style="color:#fff; float:left; display:table; background-color:#333;padding:6px">PICO-8</div>
+				</a>
+				<div style="color:#666; float:left; display:table; padding:6px"> &gt; </div>
+				<div style="color:#fab; float:left; display:table; padding:6px">Chat</div>
+				
+			</div></div><div><div style="display:table; width:100%;"><div class="desktop_div" style="display;table; 
+							float:right; margin-right:30px; margin-bottom:10px;
+							margin-left:30px; margin-top:-50px"><div style="background-color:; display:table; padding:0px; "><div style="display:table"><div style="float:left; padding:4px; color:#f8a;">Cartridges:</div><div style="float:left; padding:4px; color:#fff;"><a style="color:#aaa" href="https://www.lexaloffle.com/bbs/?cat=7#sub=2">Releases</a> | </div><div style="float:left; padding:4px; color:#fff;"><a style="color:#aaa" href="https://www.lexaloffle.com/bbs/?cat=7#sub=3">Work in Progress</a></div></div><div style="display:table"><div style="float:left; padding:4px; color:#f8a;">Community:</div><div style="float:left; padding:4px; color:#fff;"><a style="color:#aaa" href="https://www.lexaloffle.com/bbs/?cat=7#sub=4">Collaboration</a> | </div><div style="float:left; padding:4px; color:#fff;"><a style="color:#aaa" href="https://www.lexaloffle.com/bbs/?cat=7#sub=8">Jam</a> | </div><div style="float:left; padding:4px; color:#fff;"><a style="color:#aaa" href="https://www.lexaloffle.com/bbs/?cat=7#sub=7">Blogs</a></div></div><div style="display:table"></div><div style="display:table"><div style="float:left; padding:4px; color:#f8a;">Snippet Library:</div><div style="float:left; padding:4px; color:#fff;"><a style="color:#aaa" href="https://www.lexaloffle.com/bbs/?cat=7#sub=9">Code</a> | </div><div style="float:left; padding:4px; color:#fff;"><a style="color:#aaa" href="https://www.lexaloffle.com/bbs/?cat=7#sub=14">GFX</a> | </div><div style="float:left; padding:4px; color:#fff;"><a style="color:#aaa" href="https://www.lexaloffle.com/bbs/?cat=7#sub=15">SFX / Music</a></div></div><div style="float:left; padding:4px; color:#f8a;">Support:</div><div style="float:left; padding:4px; color:#fff;"><a style="color:#aaa" href="https://www.lexaloffle.com/bbs/?cat=7#sub=12">Tutorials</a> | </div><div style="float:left; padding:4px; color:#fff;"><a style="color:#aaa" href="https://www.lexaloffle.com/bbs/?cat=7#sub=5">Workshop</a> | </div><div style="float:left; padding:4px; color:#fff;"><a style="color:#fff" href="https://www.lexaloffle.com/bbs/?cat=7#sub=1"><u>Chat</u></a> | </div><div style="float:left; padding:4px; color:#fff;"><a style="color:#aaa" href="https://www.lexaloffle.com/bbs/?cat=7#sub=6">Bugs</a></div></div></div><div style="display:table; float:left; padding-bottom:0px"><div style="padding:8px; display:block;  line-height: 1.4;">
+			Chat about anything related to PICO-8.
+		</div></div></div></div></div><br><div style="background-color:#222;padding:8px;">
+	<div style="display:inline-table;width:100%;margin-bottom:4px;margin-top:4;
+	"><div class="linkybutton_lil0"><center>::</center></div><div style=" 
+		margin-left:4px; margin-right:4px; padding-left :8px; padding-right:8px;
+		float: left; display:flex; align-items:center; height:36px; background-color:#555; font-size:9pt;
+		justify:center;
+		">Page 1</div><a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;page=2"><div class="linkybutton_lil"><center>&gt;</center></div></a><div style="float: left; padding:6px"></div><a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;orderby=ts"><div class="linkybutton_lil" style="background-color : #a0a0a0; color:#fff"><center><img src="./Lexaloffle BBS ___files/i_new1.png" width="18" height="16" title="new"></center></div></a><div style="float: left; padding:8px"></div><a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1"><div class="linkybutton_lil" style="background-color : #a0a0a0; color:#fff"><center><img src="./Lexaloffle BBS ___files/i_discuss1.png" width="18"></center></div></a><a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;mode=carts"><div class="linkybutton_lil"><center><img src="./Lexaloffle BBS ___files/i_cart0.png" width="18"></center></div></a><div style="float: left; padding:2px;"></div><div class="desktop_div"><a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;cc4=1"><div class="linkybutton_lil"><center><img src="./Lexaloffle BBS ___files/set_cc0.png"></center></div></a></div></div>
+	<div style="padding:4px; display:table; width:100%"><span style="font-size:20pt;font-weight:heavy;color:#fab">New Thread Activity</span>
+				<div class="desktop_div">
+					<div style="float:right; height:32px;">
+						<span>Search:</span>
+						<input class="lexinput_search" size="20" type="text" value="" onclick="this.select();install_search_listener(this);">
+
+					</div>
+				</div>
+			
+			
+				<a style="float:right" class="mobile_div" onclick="
+						el = document.getElementById(&#39;mobile_search&#39;);
+							toggle_visible(el);
+						">
+						<div style="padding:8px">
+							<img src="./Lexaloffle BBS ___files/i_search1.png" width="18" height="16">
+						</div>
+				</a>
+				
+				<div class="mobile_div">
+					<div id="mobile_search" style="display:none; padding-top:2px;">
+					<span>Search:</span>
+					<input class="lexinput_search" size="20" type="text" value="" onclick="this.select(); install_search_listener(this);">
+					</div>
+				</div>
+			
+			<span style="font-size:9pt; margin-left:10px; color:#aaa"></span><div id="loading_spinner" style="width:24px; height:20px; display:inline; margin-left:10px;padding-top:6px;">
+		 </div>
+		</div><div style="
+		
+			display:flex;flex-direction:row;flex-wrap: wrap; padding:4px;
+			
+			">
+		<div id="pdat_118811" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=118811#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;https://www.lexaloffle.com/bbs/files/15232/me-square.jpg&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=49724">Pico-8 Educational Edition Survival Guide</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=15232">dw817</a> 10 months ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=80283">ijetanar</a> replied 
+					12 hours ago</span></div> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=pico-8"><div class="tag">#pico-8</div></a> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=education"><div class="tag">#education</div></a> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=survival"><div class="tag">#survival</div></a> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=guide"><div class="tag">#guide</div></a></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_118811_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_118811_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_118811_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_118811_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">4</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=49724">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_118811_comments">
+				<div class="i_rate_118811_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">8</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_78488" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=78488#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;/bimg/pi/pi31.png&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=38557">Download cart from itchio</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=45439">Abdullah19</a> 3 years ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=70252">Rimkusducode</a> replied 
+					2 days ago</span></div></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_78488_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_78488_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_78488_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_78488_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">2</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=38557">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_78488_comments">
+				<div class="i_rate_78488_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">8</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_132833" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=132833#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;/media/71593/user.png&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=53681">Copies Sold</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=71593">AntonyOakenfull</a> 2 days ago</span></div> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=pico-8"><div class="tag">#pico-8</div></a></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_132833_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_132833_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_132833_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_132833_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">0</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=53681">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_132833_comments">
+				<div class="i_rate_132833_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">1</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_119022" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=119022#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;/bimg/pi/pi20.png&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=49768">ESC key not working on M1 2020 Macbook Air</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=51092">Archonic</a> 10 months ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=12155">0xabad1dea</a> replied 
+					5 days ago</span></div> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=bugs"><div class="tag">#bugs</div></a> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=pico-8"><div class="tag">#pico-8</div></a></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_119022_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_119022_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_119022_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_119022_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">0</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=49768">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_119022_comments">
+				<div class="i_rate_119022_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">6</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_32014" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=32014#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;https://www.lexaloffle.com/bbs/files/16423/krystman_o_50.jpg&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=27998">Music Speed to BPM?</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=16423">Krystman</a> 7 years ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=60418">0xFFFF967F</a> replied 
+					5 days ago</span></div></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_32014_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_32014_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_32014_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_32014_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">9</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=27998">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_32014_comments">
+				<div class="i_rate_32014_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">8</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_132737" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=132737#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;/bimg/pi/pi28.png&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=53637">fillp's inverted colors</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=68924">aced</a> 5 days ago</span></div></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_132737_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_132737_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_132737_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_132737_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">0</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=53637">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_132737_comments">
+				<div class="i_rate_132737_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">1</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_123160" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=123160#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;/bimg/pi/pi15.png&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=50867">Raspberry Pi performance now terrible</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=46639">RevStu</a> 7 months ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=59082">hauvehahn</a> replied 
+					6 days ago</span></div> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=rpi"><div class="tag">#rpi</div></a> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=fps"><div class="tag">#fps</div></a> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=speed"><div class="tag">#speed</div></a></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_123160_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_123160_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_123160_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_123160_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">2</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=50867">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_123160_comments">
+				<div class="i_rate_123160_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">6</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_116070" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=116070#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;/bimg/pi/pi19.png&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=48976">Does anyone know of an efficient, practical way to rename older Pico-8 games? </a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=68371">KillerQ</a> 12 months ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=27691">pancelor</a> replied 
+					14 days ago</span></div></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_116070_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_116070_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_116070_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_116070_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">0</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=48976">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_116070_comments">
+				<div class="i_rate_116070_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">8</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_132283" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=132283#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;/bimg/pi/pi14.png&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=53514">Pls help me</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=79694">TJmemer</a> 18 days ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=41031">merwok</a> replied 
+					17 days ago</span></div> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=help"><div class="tag">#help</div></a></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_132283_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_132283_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_132283_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_132283_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">0</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=53514">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_132283_comments">
+				<div class="i_rate_132283_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">5</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_114635" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=114635#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;https://www.lexaloffle.com/bbs/files/29645/nilquest_screen.png&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=48591">Shrinko8 - Aggressive cart minification &amp; linting tool</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=29645">thisismypassword</a> 1 years ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=29645">thisismypassword</a> replied 
+					21 days ago</span></div> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=tool"><div class="tag">#tool</div></a></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_114635_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_114635_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_114635_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_114635_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">20</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=48591">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_114635_comments">
+				<div class="i_rate_114635_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">15</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_132000" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=132000#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;/media/10753/avanzar_by_dumaker1_1.gif&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=53420">Question about limits for full screen art</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=10753">winglesslittlepeople</a> 26 days ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=25532">freds72</a> replied 
+					21 days ago</span></div></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_132000_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_132000_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_132000_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_132000_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">1</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=53420">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_132000_comments">
+				<div class="i_rate_132000_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">5</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_32207" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=32207#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;/bimg/pi/pi1.png&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=28024">can you sign into pico-8 itself?</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=16353">badatcoding</a> 7 years ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=79590">DemiMakesGames</a> replied 
+					21 days ago</span></div></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_32207_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_32207_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_32207_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_32207_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">1</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=28024">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_32207_comments">
+				<div class="i_rate_32207_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">6</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_66019" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=66019#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;https://www.lexaloffle.com/bbs/files/31258/enichan5.png&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=34808">Depicofier - Converts PICO-8 syntax to standard Lua</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=31258">Eniko</a> 4 years ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=50078">roroyobert</a> replied 
+					21 days ago</span></div> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=utility"><div class="tag">#utility</div></a> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=tool"><div class="tag">#tool</div></a> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=converter"><div class="tag">#converter</div></a></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_66019_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_66019_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_66019_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_66019_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">7</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=34808">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_66019_comments">
+				<div class="i_rate_66019_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">5</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_132073" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=132073#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;/media/79507/hoothoot.png&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=53448">Newbie seeking help</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=79507">thestupidmeddy</a> 23 days ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=75969">Doriencey</a> replied 
+					23 days ago</span></div></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_132073_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_132073_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_132073_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_132073_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">1</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=53448">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_132073_comments">
+				<div class="i_rate_132073_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">4</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_131939" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=131939#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;/bimg/pi/pi1.png&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=53403">Same but different</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=69217">ghandolhagen</a> 27 days ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=69217">ghandolhagen</a> replied 
+					26 days ago</span></div> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=iterative"><div class="tag">#iterative</div></a> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=loops"><div class="tag">#loops</div></a> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=objects"><div class="tag">#objects</div></a></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_131939_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_131939_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_131939_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_131939_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">1</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=53403">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_131939_comments">
+				<div class="i_rate_131939_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">5</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_128620" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=128620#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;/media/42027/2_3090707.gif&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=52427">Milliseconds?</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=42027">sparr</a> 4 months ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=69217">ghandolhagen</a> replied 
+					27 days ago</span></div> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=api"><div class="tag">#api</div></a> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=time"><div class="tag">#time</div></a></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_128620_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_128620_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_128620_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_128620_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">1</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=52427">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_128620_comments">
+				<div class="i_rate_128620_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">2</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_131891" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=131891#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;/bimg/pi/pi1.png&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=53389">How to get support with an order?</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=79105">BitingChaos</a> 28 days ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=79105">BitingChaos</a> replied 
+					28 days ago</span></div></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_131891_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_131891_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_131891_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_131891_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">0</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=53389">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_131891_comments">
+				<div class="i_rate_131891_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">5</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_107636" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=107636#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;/bimg/pi/pi3.png&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=46743">PICO-8 In Schools</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=50051">ZazSaysStuff</a> 1 years ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=78917">arabellemcelreavy2</a> replied 
+					1 months ago</span></div></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_107636_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_107636_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_107636_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_107636_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">1</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=46743">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_107636_comments">
+				<div class="i_rate_107636_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">8</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_131348" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=131348#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;/media/66890/dark-blue-flowers-3713743510.jpeg&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=53236">Getting syntac error, why?</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=66890">BlueBirdSings</a> 1 months ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=14590">2bitchuck</a> replied 
+					1 months ago</span></div></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_131348_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_131348_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_131348_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_131348_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">0</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=53236">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_131348_comments">
+				<div class="i_rate_131348_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">2</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_22642" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=22642#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;files/12806/pico8nes.jpg&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=3582">The best Pico 8 controller</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=12806">morningtoast</a> 7 years ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=78808">taitep</a> replied 
+					1 months ago</span></div></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_22642_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_22642_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_22642_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_22642_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">2</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=3582">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_22642_comments">
+				<div class="i_rate_22642_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">12</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_131305" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=131305#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;/bimg/pi/pi8.png&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=53223">Help with raspberry pi</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=77480">Thebigmpromax</a> 2 months ago</span></div> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=support"><div class="tag">#support</div></a> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=bug"><div class="tag">#bug</div></a></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_131305_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_131305_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_131305_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_131305_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">1</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=53223">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_131305_comments">
+				<div class="i_rate_131305_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">1</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_131209" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=131209#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;/media/66890/dark-blue-flowers-3713743510.jpeg&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=53194">Question on Name Generation in pico 8</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=66890">BlueBirdSings</a> 2 months ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=54967">jasondelaat</a> replied 
+					2 months ago</span></div></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_131209_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_131209_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_131209_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_131209_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">0</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=53194">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_131209_comments">
+				<div class="i_rate_131209_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">4</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_131080" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=131080#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;/media/78659/whmsft.new.png&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=53152">Shall PICO-8 be Nice for a long-lengthy game?</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=78659">whmsft</a> 2 months ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=45608">kimiyoribaka</a> replied 
+					2 months ago</span></div> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=opinion"><div class="tag">#opinion</div></a> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=help"><div class="tag">#help</div></a> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=perspective"><div class="tag">#perspective</div></a></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_131080_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_131080_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_131080_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_131080_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">0</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=53152">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_131080_comments">
+				<div class="i_rate_131080_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">4</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_45628" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=45628#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;files/12806/Photo Oct 29, 10 58 46 PM.png&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=30147">Playing games on your phone as a web app, it works!</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=12806">morningtoast</a> 6 years ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=78659">whmsft</a> replied 
+					2 months ago</span></div></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_45628_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_45628_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_45628_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_45628_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">4</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=30147">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_45628_comments">
+				<div class="i_rate_45628_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">13</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_130667" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=130667#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;/bimg/pi/pi25.png&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=53010">Recommended Games for 5 Year Old.</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=36409">Redbeer</a> 2 months ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=45608">kimiyoribaka</a> replied 
+					2 months ago</span></div> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=games"><div class="tag">#games</div></a> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=recommend"><div class="tag">#recommend</div></a> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=arcade"><div class="tag">#arcade</div></a> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=simple"><div class="tag">#simple</div></a></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_130667_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_130667_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_130667_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_130667_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">3</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=53010">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_130667_comments">
+				<div class="i_rate_130667_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">5</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_70392" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=70392#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;https://www.lexaloffle.com/bbs/files/26673/its me.PNG&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=36059">Calculating Distance (Looking For Advice)</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=26673">Remagamer</a> 4 years ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=39676">Mot</a> replied 
+					2 months ago</span></div></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_70392_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_70392_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_70392_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_70392_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">6</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=36059">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_70392_comments">
+				<div class="i_rate_70392_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">7</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_35084" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=35084#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;/bimg/pi/pi29.png&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=28457">Pyxel Edit and PICO-8</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=20189">Astragali</a> 7 years ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=65308">ii8</a> replied 
+					2 months ago</span></div></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_35084_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_35084_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_35084_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_35084_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">3</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=28457">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_35084_comments">
+				<div class="i_rate_35084_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">3</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_130092" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=130092#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;/media/27691/dinnerwashingatsunset.gif&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=52848">Feature request: commandline exit code on failure</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=27691">pancelor</a> 3 months ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=27691">pancelor</a> replied 
+					3 months ago</span></div> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=commandline"><div class="tag">#commandline</div></a> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=featurerequest"><div class="tag">#featurerequest</div></a></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_130092_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_130092_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_130092_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_130092_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">2</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=52848">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_130092_comments">
+				<div class="i_rate_130092_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">2</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_27117" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=27117#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;https://www.lexaloffle.com/bbs/files/15121/rsn8887.gif&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=4090">Pico-8 PSP port?</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=15121">rsn8887</a> 7 years ago ::  
+					<a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=76428">arturhalturit</a> replied 
+					3 months ago</span></div></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_27117_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_27117_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_27117_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_27117_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">1</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=4090">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_27117_comments">
+				<div class="i_rate_27117_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">4</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	
+		<div id="pdat_129975" class="thread_preview"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%">
+		<a href="https://www.lexaloffle.com/bbs/?pid=129975#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(&#39;/media/42027/2_3090707.gif&#39;) no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="https://www.lexaloffle.com/bbs/?tid=52812">Feature Request: command line equivalent of info</a> <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href="https://www.lexaloffle.com/bbs/?uid=42027">sparr</a> 3 months ago</span></div> <a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;tag=feature-request"><div class="tag">#feature-request</div></a></div></div></td><td>
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;"><div class="desktop_div" style="background-color:;">
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_129975_fav" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_129975_fav" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_fav0.png">
+				</div>
+			  </div>
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_129975_like" onclick="window.alert(&#39;Please log in to like and favourites posts.&#39;);">
+				<div class="i_rate_129975_like" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_like0.png">
+				</div>
+			<div style="margin-left:8px">3</div>  </div><a href="https://www.lexaloffle.com/bbs/?tid=52812">
+				<div style="display:flex; background:#555; padding:6px;
+					align-items: center; cursor:pointer; margin-left:12px" class="rate_129975_comments">
+				<div class="i_rate_129975_comments" style="width:20px;height:20px">
+					<img width="20" height="20" src="./Lexaloffle BBS ___files/set_comments0.png">
+				</div>
+			<div style="margin-left:8px">1</div>  </div></a></div></div></div></td></tr></tbody></table></div>
+		
+	</div>
+	<div style="display:inline-table;width:100%;margin-bottom:4px;margin-top:4;
+	"><div class="linkybutton_lil0"><center>::</center></div><div style=" 
+		margin-left:4px; margin-right:4px; padding-left :8px; padding-right:8px;
+		float: left; display:flex; align-items:center; height:36px; background-color:#555; font-size:9pt;
+		justify:center;
+		">Page 1</div><a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;page=2"><div class="linkybutton_lil"><center>&gt;</center></div></a><div style="float: left; padding:6px"></div><a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;orderby=ts"><div class="linkybutton_lil" style="background-color : #a0a0a0; color:#fff"><center><img src="./Lexaloffle BBS ___files/i_new1.png" width="18" height="16" title="new"></center></div></a><div style="float: left; padding:8px"></div><a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1"><div class="linkybutton_lil" style="background-color : #a0a0a0; color:#fff"><center><img src="./Lexaloffle BBS ___files/i_discuss1.png" width="18"></center></div></a><a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;mode=carts"><div class="linkybutton_lil"><center><img src="./Lexaloffle BBS ___files/i_cart0.png" width="18"></center></div></a><div style="float: left; padding:2px;"></div><div class="desktop_div"><a href="https://www.lexaloffle.com/bbs/?cat=7#sub=1&amp;cc4=1"><div class="linkybutton_lil"><center><img src="./Lexaloffle BBS ___files/set_cc0.png"></center></div></a></div></div>
+	</div><script id="cart_data_script">
+		p_sub = 1;
+		pdat=[
+	['118811', 49724, `Pico-8 Educational Edition Survival Guide`,"https://www.lexaloffle.com/bbs/files/15232/me-square.jpg",96,48,"2022-10-08 20:49:49",15232,"dw817","2023-08-09 14:04:09",80283,"ijetanar",4,8,0,7,1,'0',["pico-8","education","survival","guide",],0,16,,``,``],
+		['78488', 38557, `Download cart from itchio`,"/bimg/pi/pi31.png",96,48,"2020-06-25 09:58:13",45439,"Abdullah19","2023-08-08 07:51:05",70252,"Rimkusducode",2,8,0,7,1,'0',[],0,16,,``,``],
+		['132833', 53681, `Copies Sold`,"/media/71593/user.png",96,48,"2023-08-07 15:15:00",71593,"AntonyOakenfull","2023-08-07 15:15:00",71593,"AntonyOakenfull",0,1,0,7,1,'0',["pico-8",],0,16,,``,``],
+		['119022', 49768, `ESC key not working on M1 2020 Macbook Air`,"/bimg/pi/pi20.png",96,48,"2022-10-13 00:52:00",51092,"Archonic","2023-08-05 10:23:12",12155,"0xabad1dea",0,6,0,7,1,'0',["bugs","pico-8",],0,16,,``,``],
+		['32014', 27998, `Music Speed to BPM?`,"https://www.lexaloffle.com/bbs/files/16423/krystman_o_50.jpg",96,48,"2016-10-29 10:37:13",16423,"Krystman","2023-08-04 22:30:07",60418,"0xFFFF967F",9,8,0,7,1,'0',[],0,16,,``,``],
+		['132737', 53637, `fillp's inverted colors`,"/bimg/pi/pi28.png",96,48,"2023-08-04 22:11:03",68924,"aced","2023-08-04 22:11:03",68924,"aced",0,1,0,7,1,'0',[],0,16,,``,``],
+		['123160', 50867, `Raspberry Pi performance now terrible`,"/bimg/pi/pi15.png",96,48,"2022-12-28 01:58:27",46639,"RevStu","2023-08-04 11:27:38",59082,"hauvehahn",2,6,0,7,1,'0',["rpi","fps","speed",],0,16,,``,``],
+		['116070', 48976, `Does anyone know of an efficient, practical way to rename older Pico-8 games? `,"/bimg/pi/pi19.png",96,48,"2022-08-20 20:20:47",68371,"KillerQ","2023-07-26 21:19:51",27691,"pancelor",0,8,0,7,1,'0',[],0,16,,``,``],
+		['132283', 53514, `Pls help me`,"/bimg/pi/pi14.png",96,48,"2023-07-23 13:13:21",79694,"TJmemer","2023-07-23 23:06:15",41031,"merwok",0,5,0,7,1,'0',["help",],0,16,,``,``],
+		['114635', 48591, `Shrinko8 - Aggressive cart minification &amp; linting tool`,"https://www.lexaloffle.com/bbs/files/29645/nilquest_screen.png",96,48,"2022-07-22 14:38:54",29645,"thisismypassword","2023-07-20 02:51:13",29645,"thisismypassword",20,15,0,7,1,'0',["tool",],0,16,,``,``],
+		['132000', 53420, `Question about limits for full screen art`,"/media/10753/avanzar_by_dumaker1_1.gif",96,48,"2023-07-15 11:11:53",10753,"winglesslittlepeople","2023-07-19 21:36:44",25532,"freds72",1,5,0,7,1,'0',[],0,16,,``,``],
+		['32207', 28024, `can you sign into pico-8 itself?`,"/bimg/pi/pi1.png",96,48,"2016-11-04 13:49:49",16353,"badatcoding","2023-07-19 20:08:15",79590,"DemiMakesGames",1,6,0,7,1,'0',[],0,16,,``,``],
+		['66019', 34808, `Depicofier - Converts PICO-8 syntax to standard Lua`,"https://www.lexaloffle.com/bbs/files/31258/enichan5.png",96,48,"2019-07-22 03:14:11",31258,"Eniko","2023-07-19 18:41:14",50078,"roroyobert",7,5,0,7,1,'0',["utility","tool","converter",],0,16,,``,``],
+		['132073', 53448, `Newbie seeking help`,"/media/79507/hoothoot.png",96,48,"2023-07-17 16:48:42",79507,"thestupidmeddy","2023-07-18 05:17:41",75969,"Doriencey",1,4,0,7,1,'0',[],0,16,,``,``],
+		['131939', 53403, `Same but different`,"/bimg/pi/pi1.png",96,48,"2023-07-13 22:23:52",69217,"ghandolhagen","2023-07-14 16:08:57",69217,"ghandolhagen",1,5,0,7,1,'0',["iterative","loops","objects",],0,16,,``,``],
+		['128620', 52427, `Milliseconds?`,"/media/42027/2_3090707.gif",96,48,"2023-04-16 15:08:09",42027,"sparr","2023-07-13 22:51:47",69217,"ghandolhagen",1,2,0,7,1,'0',["api","time",],0,16,,``,``],
+		['131891', 53389, `How to get support with an order?`,"/bimg/pi/pi1.png",96,48,"2023-07-13 00:56:58",79105,"BitingChaos","2023-07-13 13:13:40",79105,"BitingChaos",0,5,0,7,1,'0',[],0,16,,``,``],
+		['107636', 46743, `PICO-8 In Schools`,"/bimg/pi/pi3.png",96,48,"2022-02-25 14:14:52",50051,"ZazSaysStuff","2023-06-27 10:14:23",78917,"arabellemcelreavy2",1,8,0,7,1,'0',[],0,16,,``,``],
+		['131348', 53236, `Getting syntac error, why?`,"/media/66890/dark-blue-flowers-3713743510.jpeg",96,48,"2023-06-26 12:58:50",66890,"BlueBirdSings","2023-06-26 13:08:23",14590,"2bitchuck",0,2,0,7,1,'0',[],0,16,,``,``],
+		['22642', 3582, `The best Pico 8 controller`,"files/12806/pico8nes.jpg",96,48,"2016-06-10 21:20:47",12806,"morningtoast","2023-06-26 08:22:08",78808,"taitep",2,12,0,7,1,'0',[],0,16,,``,``],
+		['131305', 53223, `Help with raspberry pi`,"/bimg/pi/pi8.png",96,48,"2023-06-25 04:31:07",77480,"Thebigmpromax","2023-06-25 04:31:07",77480,"Thebigmpromax",1,1,0,7,1,'0',["support","bug",],0,16,,``,``],
+		['131209', 53194, `Question on Name Generation in pico 8`,"/media/66890/dark-blue-flowers-3713743510.jpeg",96,48,"2023-06-21 23:51:07",66890,"BlueBirdSings","2023-06-22 01:19:16",54967,"jasondelaat",0,4,0,7,1,'0',[],0,16,,``,``],
+		['131080', 53152, `Shall PICO-8 be Nice for a long-lengthy game?`,"/media/78659/whmsft.new.png",96,48,"2023-06-17 10:43:00",78659,"whmsft","2023-06-17 19:44:47",45608,"kimiyoribaka",0,4,0,7,1,'0',["opinion","help","perspective",],0,16,,``,``],
+		['45628', 30147, `Playing games on your phone as a web app, it works!`,"files/12806/Photo Oct 29, 10 58 46 PM.png",96,48,"2017-10-30 10:19:05",12806,"morningtoast","2023-06-17 10:28:39",78659,"whmsft",4,13,0,7,1,'0',[],0,16,,``,``],
+		['130667', 53010, `Recommended Games for 5 Year Old.`,"/bimg/pi/pi25.png",96,48,"2023-06-08 13:34:48",36409,"Redbeer","2023-06-09 03:13:47",45608,"kimiyoribaka",3,5,0,7,1,'0',["games","recommend","arcade","simple",],0,16,,``,``],
+		['70392', 36059, `Calculating Distance (Looking For Advice)`,"https://www.lexaloffle.com/bbs/files/26673/its me.PNG",96,48,"2019-11-30 05:42:55",26673,"Remagamer","2023-05-31 01:43:16",39676,"Mot",6,7,0,7,1,'0',[],0,16,,``,``],
+		['35084', 28457, `Pyxel Edit and PICO-8`,"/bimg/pi/pi29.png",96,48,"2017-01-06 12:49:27",20189,"Astragali","2023-05-25 20:23:07",65308,"ii8",3,3,0,7,1,'0',[],0,16,,``,``],
+		['130092', 52848, `Feature request: commandline exit code on failure`,"/media/27691/dinnerwashingatsunset.gif",96,48,"2023-05-24 08:14:05",27691,"pancelor","2023-05-24 08:59:50",27691,"pancelor",2,2,0,7,1,'0',["commandline","featurerequest",],0,16,,``,``],
+		['27117', 4090, `Pico-8 PSP port?`,"https://www.lexaloffle.com/bbs/files/15121/rsn8887.gif",96,48,"2016-08-20 13:27:30",15121,"rsn8887","2023-05-21 05:45:05",76428,"arturhalturit",1,4,0,7,1,'0',[],0,16,,``,``],
+		['129975', 52812, `Feature Request: command line equivalent of info`,"/media/42027/2_3090707.gif",96,48,"2023-05-21 00:22:25",42027,"sparr","2023-05-21 00:22:25",42027,"sparr",3,1,0,7,1,'0',["feature-request",],0,0,,``,``],
+		];
+		var updat=[
+	];
+		search_url_base = "#sub=1&search=";
+		tag_url_base =    "#sub=1&tag=";
+		
+		function make_stat_box(set_name, num, state, post_id, bg, margin)
+		{
+			var imgf = set_name;
+			if (state == 1)
+				imgf = imgf + `1.png`;
+			else
+				imgf = imgf + `0.png`;
+			
+			var s =
+			`
+				<div style="display:flex; background:`+bg+`; padding:6px;
+					align-items: center; cursor:pointer; margin-left:`+margin+`px"
+					class=rate_` + post_id + `_` + set_name;
+			
+			if (set_name!="comments")
+			{
+				s = s +	`				
+					onclick="window.alert('Please log in to like and favourites posts.');"`;
+
+			}
+			
+			s = s + `
+				>
+				<div class=i_rate_` + post_id + `_` + set_name+` style="width:20px;height:20px">
+					<img width=20 height=20 src="/gfx/set_`+imgf+`">
+				</div>
+			`;
+			
+			if (num >= 0)
+				s=s+`<div  style="margin-left:8px">`+num+`</div>`;
+			s = s + `  </div>`;
+			return s;
+		}
+	
+	function generate_thread_preview(dat, set_flags)
+{
+	//var s = `<div style="display:flex;align-items: center; padding:4px">`;
+	
+	var s= `<table width=100% cellspacing=0 cellpadding=0><tr><td width=100%>`;
+
+	var thread_url = `/bbs/?tid=`+dat[1];
+	var pid_url    = `/bbs/?pid=`+dat[0];
+	if (dat[15] == -1){
+		thread_url = pid_url + `&tkey=`+dat[23];
+		pid_url    = pid_url + `&tkey=`+dat[23];
+	}
+
+	// :: thumb
+
+	if (dat[17])
+	{
+		// cover
+		s += `
+		<a href="`+pid_url+`#p">
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div
+			style="
+			cursor:pointer; width:64px; height:64px; 
+			background:url(\'`+dat[3]+`\') no-repeat center;
+			-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			
+		">
+		</div>
+		</div>
+		</a>
+	`;
+
+	/* popup player. better just to show the cart in thread context with fast load
+		s += `
+			<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+			<div style="width:64px">
+				<a onClick="toggle_playarea('playarea_popup','`+dat[17]+`');">
+					<center>
+					<img src="`+dat[3]+`" width=`+dat[4]+` height=`+dat[5]+`></center>
+				</a>
+			</div>
+			</div>
+		`;
+	*/
+	}
+	else
+	{
+		// no cart in thumb; link to cat
+		s += `
+		<div style="display:flex; min-height:64px; align-items:center; float:left; padding:8px">
+		<div style="width:64px">
+			<a href="/bbs/?cat=`+dat[15]+`">
+				<center><img src="`+dat[3]+`" width=`+dat[4]+` height=`+dat[5]+`></center>
+			</a>
+		</div>
+		</div>
+	`;
+	}
+	
+	// :: title and tags (gets space left over)
+	{
+		s = s +
+		`<div style="display:flex; min-height:48px; align-items: center; padding:10px;">
+			<div>
+				<div style="font-size:14pt;margin-bottom:8px; margin-top:4px">
+				<a href="`+thread_url+`" >`;
+		s = s + dat[2];
+		s = s + `</a>`
+		
+		// by fred, last reply by annie 4 days ago
+		{
+			s += ` <br> <span style="color:#777;font-size:8pt;padding-top:4px; display:table">
+				by <a style="color:#ccc" href=?uid=`+dat[7]+`>`+dat[8]+`</a>`;
+			s += ` `+get_relative_time(dat[6]);//+`</span>`;
+			
+			if (true)
+			{
+				if (dat[13] > 1)
+				s += ` ::  
+					<a style="color:#ccc" href=?uid=`+dat[10]+`>`+dat[11]+`</a> replied 
+					`+get_relative_time(dat[9]);
+			}
+		}
+		
+		s += `</span>`;
+		
+		s += `</div>`;
+	
+	
+		// category (only need if not viewing that sub-forum)
+		if (false)
+		if (p_sub==0)
+		{
+			s = s + `<div style="float:left; display:flex; align-items:center; margin:4px; padding:4px;
+				background-color:#999; color:#222; font-size:8pt; border-color:#939; border:4px; border-radius:4px">
+			<div style="width:16px"><img src="/gfx/i_cart1.png" width=16 height=16></div>
+			<div style="display:span">Carts</div></div>`;
+		}
+		
+		// catsub
+		if (p_cat == 0 || p_sub == 0)
+		{
+			label = '';
+			if (p_cat == 0)
+			{
+				label = 'Blog';
+				if (dat[15] == 6) label = 'Voxatron > ';
+				if (dat[15] == 7) label = 'PICO-8 > ';
+				if (dat[15] == -1) label = 'Unlisted';
+			}
+			
+			
+			cols = ['f47','fab','4af','fa4','f8a','5ff','4c4','f47','f8a',  'cde', 'cde', 'cde', '8df', 'cde', 'fcb', '8fa'];
+			
+			col = cols[dat[16]%16];
+			
+			
+				 if (dat[16] == 1) label += 'Discussion';
+			//else if (dat[16] == 2) label += '<img src=/gfx/i_cart1.png width=18> Carts';
+			else if (dat[16] == 2) label += 'Cartridges';
+			else if (dat[16] == 3) label += 'Work in Progress';
+			else if (dat[16] == 4) label += 'Collaboration';
+			else if (dat[16] == 5) label += 'Workshop';
+			else if (dat[16] == 6) label += 'Support';
+			else if (dat[16] == 7) label += 'Blog';
+			else if (dat[16] == 8) label += 'Jam';
+			else if (dat[16] == 9) label += 'Code Snippet';
+			else if (dat[16] == 14) label += 'GFX Snippet';
+			else if (dat[16] == 15) label += 'SFX Snippet';
+
+			//else label += '?';
+			
+			s += `
+			<a href=?cat=`+dat[15]+`#sub=`+dat[16]+`>
+			<div class=tag style="background-color:#`;
+			s += col;
+			s += `;">`+label+`</div></a>`;
+			
+		}
+		
+		// cc4
+		if (dat[20] & 0x1)
+		{
+			s += `
+				<a href="/bbs/?cat=`+p_cat+`#sub=`+p_sub+`&cc4=1">
+				<div class=tag style="background-color:#f90; color:#fff"> CC</div></a>`;
+		}
+		
+		// resolved
+		if (dat[16] == 6) // support sub. to do: how-to or workshop sub?
+		{
+			if (dat[19] & 0x1)
+				s += `<div class=tag style="background-color:#2a4; color:#afa">
+				<img src="/gfx/set_tick1.png" width=10 height=10> Resolved</div>`;
+			else
+				s += `<div class=tag style="background-color:#c96; color:#fff">Unresolved</div>`;	
+		}
+		
+		
+		// tags
+		if (dat[18]) // tags
+		{
+			for (var j=0; j < dat[18].length; j++)
+				s +=` <a href="` + tag_url_base + dat[18][j] + `"><div class="tag">#`+dat[18][j]+`</div></a>`;
+		}
+		
+		s = s + `</div></div>`;
+	}
+	
+	s = s + `</td><td>`;
+
+	// :: extra info float right
+	if (dat[15] != -1)
+	{
+		s = s + `
+		<div style="float:right;margin-right:12px;display:flex;align-items: center;">`;
+
+		// :: resolved tick in support sub, when same author
+		if (false) // nope -- just set inside post view (should be after reading anyway)
+		if (dat[16] == 6 && s_uid == dat[7])
+		{
+			s = s + make_stat_box("tick", -1, (set_flags & 0x4) ? 1 : 0, dat[0]);
+		}
+	
+		// :: author + timestamp x2
+		/*
+		s = s + `
+		<div class="desktop_div" style="margin-right:10px; min-width:120px; font-size:9pt">
+
+			<a href=?uid=`+dat[7]+`>`+dat[8]+`</a><br>
+			<span style="color:#777;font-size:8pt;margin-right:10px;">`+get_relative_time(dat[6])+`</span><br>
+			<div style="display:block; height:6px"></div>
+			<a href=?uid=`+dat[10]+`>`+dat[11]+`</a><br>
+			<span style="color:#777;font-size:8pt;margin-right:10px;">`+get_relative_time(dat[9])+`</span>
+			
+		</div>
+		`;
+		*/
+		
+		// :: fav, like, comments
+		s = s + `<div class="desktop_div" style="background-color:;">`;
+		s = s + `
+		<div style="min-width:160px;float:right;margin-right:4px;display:flex;">`;
+
+		s = s + make_stat_box("fav", -1, (set_flags & 0x2) ? 1 : 0, dat[0], "#555", 12);
+		s = s + make_stat_box("like", dat[12],  (set_flags & 0x1) ? 1 : 0, dat[0], "#555", 12);
+
+		
+		s = s + `<a href="`+thread_url+`">`;
+
+		s = s + make_stat_box("comments", dat[13], 0, dat[0], "#555", 12);
+		s = s + `</a></div>`;
+		
+		if (false)
+		{
+			s += `
+				<span style="color:#777;font-size:8pt;padding:4px; padding-left:12px; display:table;">
+				<a href=?uid=`+dat[7]+`>`+dat[8]+`</a>
+				`+get_relative_time(dat[6])+`</span>`;
+		}
+		
+		s += `</div>`;
+
+		// end of extra info float right
+		s = s + `</div>`;
+	}
+
+	s = s + `</td></tr></table>`;
+	//s = s + `</div>`;
+
+	return s;
+}
+
+
+
+
+// overlapping
+function generate_cart_preview_overlapping(dat, set_flags)
+{
+	// /gfx/p8b_pico8.png
+	
+	s = '';
+	
+	// image
+	s = s + `
+	<div
+	
+	style="cursor:pointer; margin-right:10px; float:left;
+		width:256px; height:192px; 
+		margin-bottom:12px;
+		background:url('`+dat[3]+`') no-repeat center;
+		-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+		">	
+	`;
+	
+	// title, author
+	s += `
+	<div >
+	<div style="display:block; padding-top:0px; padding-bottom:6px; overflow:hidden; border-radius:0px;">
+
+
+	<div style="display:block; padding-top:4px; padding-bottom:8px; 
+			background-color:rgba(16,0,32,0.5); // rgba
+			border-radius:0px;
+			min-height:40px ">
+
+	<div style="float:right; display:table;">
+	`;
+	
+	// favourite, cc4
+	s += `<div style="margin-top:-6px">`;
+	
+	// dat[0] is the containing post
+	s += make_stat_box("fav", -1, 0, dat[0], "", 2);
+	
+	if (dat[20] & 0x1) //cc4
+	{
+		s += `
+		<a href="/bbs/?cat=`+p_cat+`#sub=`+p_sub+`&cc4=1">		
+		<div class=tag style="background-color:#444; margin-top:-4px; margin-left:6px; 
+				color:#bbb; border:1px solid; border-radius:4px; padding:0px;
+				padding-right:4px; padding-left:4px">
+		CC</div></a>`;
+	}
+	
+	s += `</div>`;
+	
+	
+	s += `
+		</div>
+		<div style="max-height:90px; margin-left:5px">
+			
+			<a href="?pid=`+dat[0]+`#p">
+				<font style="color:#fff; font-size:12pt">`+dat[22]+`</font>
+			</a>
+			<br>
+			<a href="/bbs/?uid=`+dat[7]+`&mode=carts">
+				<font style="color:#fab; font-size:8pt">@`+dat[8]+`</font>
+			</a>
+			
+		</div>
+		
+		
+	
+	</div>
+	</div>
+	</div>
+	`;
+	
+	
+	// buttons
+	s = s + `
+		<div style="display:flex; color:#222;">
+	`;
+	
+	//s = s + make_stat_box("comments", -1, -1, dat[0], "#ddd");
+	
+	// like and fav are for parent post, not cart id
+	bgcol="#ddd";
+	bgcol="#bbb";
+	
+	//s = s + '<div style="display:inline-block">';
+	
+	if (false)
+	{
+		s = s + make_stat_box("cc", -1, (set_flags & 8) ? 1 : 0, dat[0], bgcol, 2);
+		s = s + make_stat_box("fav", -1, (set_flags & 0x12) ? 1 : 0, dat[14], bgcol, 2);
+		s = s + make_stat_box("like", dat[12],  (set_flags & 0x11) ? 1 : 0, dat[14], bgcol, 2);
+		
+	}
+	
+	//s = s + '</div>';
+	
+	s = s + `
+		</div></div>
+	`;
+	
+	s = s + `
+	
+		</div>
+		</div>
+	`;
+	
+	return s;
+}
+
+function generate_cart_preview(dat, set_flags)
+{
+	// /gfx/p8b_pico8.png
+	
+	s = '';
+	bgcol="#bbb";
+	
+	
+	// image
+	/* pop up player
+	s = s + `
+	<a onClick="toggle_playarea('playarea_popup','`+dat[17]+`');" style="cursor:pointer;">
+	<img class=pixel_perfect src="`+dat[3]+`" width=`+dat[4]+` height=`+dat[5]+` 
+		style="border:1px solid black;
+				margin-bottom:-4px;
+		">
+	</a>
+	`;
+	*/
+
+
+	// image
+
+	// cover square
+	// pixel perfect iff pico-8
+	var class_str='';
+	if (dat[15] == 7)
+		class_str='class="pixel_perfect"';
+
+	s = s + `
+		<a href="/bbs/?pid=`+ dat[0] + `#p" >
+			<div 
+				`+class_str+`
+				style="
+				border-radius:0px;
+				cursor:pointer; width:256px; height:192px; 
+				background:url(\'`+dat[3]+`\') no-repeat center;
+				-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
+			">
+			</div>
+		</a>
+	`;
+	
+	
+	s += `
+	
+	<div>
+
+	<div style="display:block; padding-top:0px; padding-bottom:6px; overflow:hidden; border-radius:0px;">
+	<div style="background-color:#444448; height:4px; width:256px; border-radius:0px;"></div>
+	<div style="display:block; padding-top:8px; padding-bottom:8px; background-color:#555; color:#fff;
+				border-radius:0px;
+				min-height:36px; width:256px;">
+	<div style="float:right; display:table;">
+	`;
+	
+	// favourite, cc4
+	s += `<div style="margin-top:-6px">`;
+	
+	// dat[0] is the containing post
+	s = s + make_stat_box("fav", -1, (set_flags & 0x2) ? 1 : 0, dat[0], "", 2);
+	
+	if (false)
+	{
+		s += '<div style="margin-top:-10px">';
+		s = s + make_stat_box("like", dat[12],  (set_flags & 0x1) ? 1 : 0, dat[0], "", 2);
+		s += '</div>';
+	}
+	
+	
+	if (dat[20] & 0x1)
+	{
+		s += `<div class=tag style="background-color:#444; margin-top:-4px; margin-left:6px; 
+				color:#bbb; border:1px solid; border-radius:4px; padding:0px;
+				padding-right:4px; padding-left:4px">
+		CC</div>`;
+	}
+	
+	s += `</div>`;
+	
+	var imgstr = '<img src="/gfx/p8b_pico8.png" width=20>';
+	if (dat[15] == 6) imgstr = '<img src="/gfx/p8b_vox.png" width=20>';
+	
+	// title, author
+	s += `
+		</div>
+		
+		<div style="max-height:90px; margin-left:5px; display:table">
+			
+			<div style="padding-bottom:3px; padding-right:4px">
+			<a href="?pid=`+dat[0]+`#p">
+				<font style="color:#fff; font-size:10pt">`+dat[22]+`</font>
+			</a>
+			</div>
+
+			<div style="float:left; margin-bottom:4px; margin-right:8px">`+imgstr+`</div>
+			<a href="/bbs/?uid=`+dat[7]+`&mode=carts">
+				<font style="color:#fff; font-size:8pt;">by `+dat[8]+`</font>
+			</a>
+			
+		</div>
+		
+		
+	
+	</div>
+	</div>
+	</div>
+	`;
+	
+	
+	// buttons
+	s = s + `
+		<div style="display:flex; color:#222;">
+	`;
+	
+	//s = s + make_stat_box("comments", -1, -1, dat[0], "#ddd");
+	
+	// like and fav are for parent post, not cart id
+	
+	//s = s + '<div style="display:inline-block">';
+	
+	if (false)
+	{
+		s = s + make_stat_box("cc", -1, (set_flags & 8) ? 1 : 0, dat[0], bgcol, 2);
+		s = s + make_stat_box("fav", -1, (set_flags & 0x2) ? 1 : 0, dat[0], bgcol, 2);
+		s = s + make_stat_box("like", dat[12],  (set_flags & 0x1) ? 1 : 0, dat[0], bgcol, 2);
+		
+	}
+	
+	//s = s + '</div>';
+	
+	s = s + `
+		</div></div>
+	`;
+	
+	s = s + `
+	
+		</div>
+	`;
+	
+	return s;
+}
+
+
+function inject_cart_data()
+{
+
+/*
+	var el = document.getElementById('cart_data_script');
+	if (el)
+	{
+		eval(el.innerHTML);
+	}
+*/
+
+	console.log('@ injecting ' + pdat.length);
+	
+	for (var i = 0; i < pdat.length; i++)
+	{
+		// generate inner html
+	
+		var dat = pdat[i];
+		set_flags = updat[i];
+		
+		el = document.getElementById('pdat_'+dat[0]);
+
+		if (el)
+		{
+			if (pdat[i][19] & 2) // show as cart
+				el.innerHTML = generate_cart_preview(pdat[i], updat[i]);
+			else
+				el.innerHTML = generate_thread_preview(pdat[i], updat[i]);
+		}
+		else
+		{
+			// no placeholder
+			console.log('error: no placeholder for pdat_'+dat[0]);
+		}
+	}
+}
+
+
+
+//------------------------------------------
+
+	window.onhashchange=load_hash_location;
+	//inject_cart_data();
+
+//------------------------------------------
+
+
+inject_cart_data();</script></div>
+			
+
+	<div style="
+		width:100%;
+		min-height:300px;
+		background-color:#000;
+	"><div style="padding:20px">
+	
+	<center><div style="display:table">
+	
+		<div style="display:block; margin-bottom:10px;">
+		<center>
+			<a style="margin:8px" href="https://www.lexaloffle.com/info.php">About</a> |
+			<a style="margin:8px" href="mailto:hey@lexaloffle.com">Contact</a> |
+			<a style="margin:8px" href="https://www.lexaloffle.com/games.php?page=updates">Updates</a> |
+			<a style="margin:8px" href="https://www.lexaloffle.com/info.php?page=tos">Terms of Use</a> |
+			<a style="margin:8px" href="https://www.lexaloffle.com/picotron.php">Picotron</a>
+		</center>
+		</div>
+		
+		<center>
+			<div style="display:table; margin-bottom:10px">
+			<div style="font-size:10pt; display:flex; align-items:center">
+				Follow Lexaloffle:
+				&nbsp;
+				<a href="https://mastodon.social/@zep" class="social_button"><img class="pixel_perfect" src="./Lexaloffle BBS ___files/so_mastodon.png" width="32" height="32" border="0"></a>
+				&nbsp;
+				<a href="https://twitter.com/lexaloffle" class="social_button"><img class="pixel_perfect" src="./Lexaloffle BBS ___files/so_twitter.png" width="32" height="32" border="0"></a>
+				&nbsp;
+				<a href="https://www.facebook.com/pages/Lexaloffle-Games/152417151455469" class="social_button">
+					<img class="pixel_perfect" src="./Lexaloffle BBS ___files/so_facebook.png" width="32" height="32" border="0"></a>
+				&nbsp;
+				<a href="https://www.youtube.com/user/lexaloffletv" class="social_button">
+					<img class="pixel_perfect" src="./Lexaloffle BBS ___files/so_youtube.png" width="32" height="32" border="0"></a>			
+				&nbsp;
+				<a href="https://www.lexaloffle.com/bbs/feed.php" class="social_button"><img class="pixel_perfect" src="./Lexaloffle BBS ___files/so_rss.png" width="32" height="32"></a>
+			</div>
+			</div>
+			
+			<div style="color:#777;font-size:8pt;">
+			
+				Generated 2023-08-10 02:25:20 |
+				0.038s | 
+				Q:163 <div id="cache_info" style="display:inline;"> </div>
+			</div>
+
+		</center>
+
+	</div></center>
+	
+
+	</div></div>
+
+
+
+
+
+	</div></div></div></body></html>

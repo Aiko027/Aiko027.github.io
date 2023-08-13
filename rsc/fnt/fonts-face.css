@@ -1,0 +1,8 @@
+@font-face{
+    font-family: Pico8Font;
+    src: url(pico-8/pico-8.ttf) format("truetype");
+}
+
+.pico8-font-div{
+    font-family: Pico8Font;
+}

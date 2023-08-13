@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pico 8 - Empieza a Jugar</title>
+    <link rel="stylesheet" href="./../../style.css">
+    <link rel="stylesheet" href="../fnt/fonts-face.css">
+    <link rel="stylesheet" href="./../css/mediaControls.css">
+    <link rel="icon" type="image/png" href="../img/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="img-div-header"><!----imagen logo---->
+            <a href="../../index.html"><img src="../img/PICO-8_logo.png" alt="Pico 8 Logo completo"
+                    class="img-responsive"></a>
+        </div>
+        <div class="container-fluid nav-div pico8-font-div"><!----barra de Navegación---->
+            <nav>
+                <div class="container-fluid">
+                    <div class="caja-div" onmouseover="chngBackground(this)" onmouseleave="returnBackground(this)">
+                        <a class="caja-a" href="./startPlaying.html" id="startPlayingRef">empieza a jugar</a>
+                    </div>
+                    <div class="caja-div" onmouseover="chngBackground(this)" onmouseleave="returnBackground(this)">
+                        <a class="caja-a" href="./../dls/dev-tools-pico-8.zip" download="dev-tools-pico-8.zip" id="devToolsRef">herramientas de desarrollo</a>
+                    </div>
+                    <div class="caja-div" onmouseover="chngBackground(this)" onmouseleave="returnBackground(this)">
+                        <a class="caja-a" href="./exitPicoFanDomain.html" id="userManualRef">manual de usuario</a>
+                    </div>
+                    <div class="caja-div" onmouseover="chngBackground(this)" onmouseleave="returnBackground(this)">
+                        <a class="caja-a" href="https://www.lexaloffle.com/bbs/?cat=7#sub=0" id="ForumRef">foro de ayuda
+                            oficial de pico 8</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div>
+        
+    </div>
+    <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-pills card-header-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" style="margin: 10px;" onclick="actualizarTarjetas(1)">Controles jugador 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#" style="margin: 10px;" onclick="actualizarTarjetas(2)">Controles jugador 2</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body" id="contenidoJugador1" >
+            <h2>Controles: </h2>
+            <h3>⬆ - Flecha arriba </h3>
+            <h3>⬇ - Flecha abajo</h3>
+            <h3>⬅ - Flecha Izquierda</h3>
+            <h3>➡ - Flecha derecha</h3>
+            <h3>🅾 - Boton Z</h3>
+            <h3>❎ - Boton X</h3>
+            <h3>Pause - Boton P</h3>
+        </div>
+        <div class="card-body" id="contenidoJugador2" hidden="true";>
+            <h2>Controles: </h2>
+            <h3>⬆ - Boton E </h3>
+            <h3>⬇ - Boton D</h3>
+            <h3>⬅ - Boton S</h3>
+            <h3>➡ - Boton F</h3>
+            <h3>🅾 - Boton LShift</h3>
+            <h3>❎ - Boton A</h3>
+            <h3>Pause - Boton P</h3>
+        </div>
+      </div>
+    <br>
+    <div class="centrar-div">
+        <h1>Selecciona un juego</h1>
+    </div>
+    <div class="btn-group btn-group-toggle container-fluid" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+          <input type="radio" name="options" id="Celeste" autocomplete="off" onclick="cargarJuego('Celeste')" > Celeste
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="Celeste 2" autocomplete="off" onclick="cargarJuego('Celeste 2')"> Celeste 2
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="Pico Dino" autocomplete="off" onclick="cargarJuego('Pico Dino')"> Radio
+        </label>
+        <label class="btn btn-secondary">
+            <input type="radio" name="options" id="Poom" autocomplete="off" onclick="cargarJuego('Poom')"> Poom
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="Space Station Demo" autocomplete="off" onclick="cargarJuego('Space Station Demo')"> Space Station Demo
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="Pigments" autocomplete="off" onclick="cargarJuego('Pigments')"> Pigments
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="Plantas vs Zombies" autocomplete="off" onclick="cargarJuego('Plantas vs Zombies')"> Plantas vs Zombies
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="Buns: Bunny Survivor" autocomplete="off" onclick="cargarJuego('Buns: Bunny Survivor')"> Buns: Bunny Survivor
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="options" id="Tetys" autocomplete="off" onclick="cargarJuego('Tetys')"> Tetys
+          </label>
+      </div>
+    <div class="centrar-div">
+        <iframe id="gameiFrame" src="" allowfullscreen width="621" height="513"
+            style="border:none; overflow: visible"></iframe>
+    </div>
+    <div class="alert alert-danger" role="alert">
+        Cuidado con el sonido si utilizas audifonos!
+    </div>
+    
+
+    <footer><!--Pie de Pagina-->
+        <div class="img-div-footer container-fluid">
+            <img src="../img/PICO-8-footer.png" alt="Pico 8 Logotipo" class="img-footer">
+            <h6 class="footer-div">
+                Pico 8 es un proyecto de&#160
+                <a href="https://www.lexaloffle.com/pico-8.php">
+                    lexaloffle games
+                </a>.
+                &#160 | Pagina unicamente creada con fines academicos.
+            </h6>
+            <br>
+            <a href="../supersecret/easteregg.html" class="hidden-text">ㅤSUPERSECRET DO NOT CLICKㅤ</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./../../script.js"></script>
+    <script src="../js/startPlaying.js"></script>
+</body>
+
+</html>
